@@ -16,7 +16,7 @@
 		<!--Description under 165 characters-->
 	</head>
 	<body>
-		<h1>Header 1</h1><!--Unique per document-->
+		<h1 style="background-color: brown;">Header 1</h1><!--Unique per document-->
 		<h2>Header 2</h2>
 		<h3>Header 3</h3>
 		<h4>Header 4</h4>
@@ -95,9 +95,8 @@
                 </code>
             </pre>
         </p>
-        <hr>
+        <hr />
         <h2>Structural semantic labels</h2>
-        <div></div><!--Container tag exception without semantics-->
         <header></header>
             <nav></nav>
         <main></main><!--Unique per document-->
@@ -108,5 +107,9 @@
         <footer>
             <address></address>
         </footer>
+        <hr />
+        <h2>Block labels vs. line labels</h2>
+        <div style="background-color: brown;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum placeat inventore incidunt, blanditiis laborum praesentium odit deleniti amet illo architecto eius sint optio atque quibusdam eligendi magnam doloribus. Sed, reiciendis.</div><!--Non-semantic container block label-->
+        <span style="background-color: yellow;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi eligendi quaerat tempore totam est nihil.</span><!--Non-semantic container line label-->
 	</body>
 </html>
