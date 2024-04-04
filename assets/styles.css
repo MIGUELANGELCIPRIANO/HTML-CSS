@@ -1,3 +1,7 @@
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	color: aliceblue;
 	font-family: sans-serif;
