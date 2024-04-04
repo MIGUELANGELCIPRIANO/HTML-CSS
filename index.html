@@ -22,6 +22,7 @@
 		<link rel="stylesheet" href="./assets/styles.css" />
 	</head>
 	<body>
+		<h2 id="headers">Headers</h2>
 		<h1 style="background-color: brown">Header 1</h1>
 		<!--Unique per document-->
 		<h2>Header 2</h2>
@@ -30,7 +31,7 @@
 		<h5>Header 5</h5>
 		<h6>Header 6</h6>
 		<hr />
-		<h2>Basic text labels</h2>
+		<h2 id="basic-text-labels">Basic text labels</h2>
 		<p>
 			Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br />
 			Odio numquam sed nulla eveniet, quidem, beatae, deleniti aperiam rem dicta
@@ -60,7 +61,7 @@
 			>
 		</p>
 		<hr />
-		<h2>Semantic text labels</h2>
+		<h2 id="semantic-text-labels">Semantic text labels</h2>
 		<p>
 			<strong
 				>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
@@ -78,7 +79,7 @@
 		<blockquote>Lorem ipsum dolor sit amet.</blockquote>
 		<cite>Lorem, ipsum.</cite>
 		<hr />
-		<h2>Text formatting labels</h2>
+		<h2 id="text-formatting-labels">Text formatting labels</h2>
 		<p></p>
 		<pre>
                 Lorem, ipsum dolor:
@@ -101,7 +102,7 @@
                 </code>
             </pre>
 		<hr />
-		<h2>Structural semantic labels</h2>
+		<h2 id="structural-semantic-labels">Structural semantic labels</h2>
 		<header>Header</header>
 		<nav>Nav</nav>
 		<main>Main</main>
@@ -116,7 +117,7 @@
 			<address>Address</address>
 		</footer>
 		<hr />
-		<h2>Block labels vs. line labels</h2>
+		<h2 id="blocklabels-vs-linelabels">Block labels vs. line labels</h2>
 		<div style="background-color: brown">
 			Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum
 			placeat inventore incidunt, blanditiis laborum praesentium odit deleniti
@@ -129,18 +130,19 @@
 			eligendi quaerat tempore totam est nihil.</span
 		><!--Non-semantic container line label-->
 		<hr />
-		<h2>Images</h2>
+		<h2 id="images">Images</h2>
 		<img src="./img/urabrask.jpg" alt="Alternative text" />
 		<figcaption>footnote</figcaption>
 		<hr />
-		<h2>HTML Scripts</h2>
+		<h2 id="html-scripts">HTML Scripts</h2>
 		<!--Bottom of HTML document-->
+		console.log()
 		<script>
 			console.log('Hello world!')
 		</script>
 		<script src="./assets/code.js"></script>
 		<hr />
-		<h2>Sorted lists</h2>
+		<h2 id="sorted-lists">Sorted lists</h2>
 		<ol>
 			<li>White</li>
 			<li>Blue</li>
@@ -170,7 +172,7 @@
 			<li>Green</li>
 		</ol>
 		<hr />
-		<h2>Unordered lists</h2>
+		<h2 id="unordered-lists">Unordered lists</h2>
 		<ul type="disc">
 			<li>Lorem ipsum dolor sit amet consectetur.</li>
 			<li>Lorem, ipsum dolor.</li>
@@ -187,7 +189,7 @@
 			<li>Lorem, ipsum.</li>
 		</ul>
 		<hr />
-		<h2>Definition lists</h2>
+		<h2 id="definition-lists">Definition lists</h2>
 		<dl>
 			<dt>White</dt>
 			<dd>Lorem ipsum dolor sit amet, consectetur adipisicing.</dd>
@@ -201,7 +203,7 @@
 			<dd>Lorem ipsum dolor sit amet consectetur adipisicing.</dd>
 		</dl>
 		<hr />
-		<h2>Tables</h2>
+		<h2 id="tables">Tables</h2>
 		<table>
 			<thead>
 				<tr>
@@ -214,7 +216,7 @@
 			<tbody>
 				<tr>
 					<td>Elesh Norn</td>
-					<td rowspan="5">legendary Phyrexian Praetor</td>
+					<td rowspan="5">Legendary Phyrexian Praetor</td>
 					<td>White</td>
 				</tr>
 				<tr>
@@ -241,7 +243,7 @@
 			</tfoot>
 		</table>
 		<hr />
-		<h2>Links</h2>
+		<h2 id="external-links">External Links</h2>
 		<a href="./link.html">link.html Page</a>
 		<br />
 		<a href="https://magic.wizards.com/en" target="_blank" rel="nofollow"
@@ -256,5 +258,34 @@
 				alt="Magic Arena Official Website"
 				width="100"
 		/></a>
+		<hr />
+		<h2>Internal Links</h2>
+		<ul>
+			<li><a href="index.html#headers">Headers</a></li>
+			<li><a href="index.html#basic-text-labels">Basic text labels</a></li>
+			<li>
+				<a href="index.html#semantic-text-labels">Semantic text labels</a>
+			</li>
+			<li>
+				<a href="index.html#text-formatting-labels">Text formatting labels</a>
+			</li>
+			<li>
+				<a href="index.html#structural-semantic-labels"
+					>Structural semantic labels</a
+				>
+			</li>
+			<li>
+				<a href="index.html#blocklabels-vs-linelabels"
+					>Block labels vs. line labels</a
+				>
+			</li>
+			<li><a href="index.html#images">Images</a></li>
+			<li><a href="index.html#html-scripts">HTML Scripts</a></li>
+			<li><a href="index.html#sorted-lists">Sorted lists</a></li>
+			<li><a href="index.html#unordered-lists">Unordered lists</a></li>
+			<li><a href="index.html#definition-lists">Definition lists</a></li>
+			<li><a href="index.html#tables">Tables</a></li>
+			<li><a href="index.html#external-links">External Links</a></li>
+		</ul>
 	</body>
 </html>
