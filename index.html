@@ -22,7 +22,7 @@
 		<link rel="stylesheet" href="./assets/styles.css" />
 	</head>
 	<body>
-		<h2>Internal Links</h2>
+		<h2>Internal links</h2>
 		<ul>
 			<li><a href="index.html#headers">Headers</a></li>
 			<li><a href="index.html#basic-text-labels">Basic text labels</a></li>
@@ -43,19 +43,21 @@
 				>
 			</li>
 			<li><a href="index.html#images">Images</a></li>
-			<li><a href="index.html#html-scripts">HTML Scripts</a></li>
+			<li><a href="index.html#html-scripts">HTML scripts</a></li>
 			<li><a href="index.html#sorted-lists">Sorted lists</a></li>
 			<li><a href="index.html#unordered-lists">Unordered lists</a></li>
 			<li><a href="index.html#definition-lists">Definition lists</a></li>
 			<li><a href="index.html#tables">Tables</a></li>
-			<li><a href="index.html#external-links">External Links</a></li>
+			<li><a href="index.html#external-links">External links</a></li>
 			<li>
 				<a href="index.html#interactive-elements">Interactive elements</a>
 			</li>
 			<li><a href="index.html#audio-and-video">Audio and video</a></li>
 			<li><a href="index.html#iframes">Iframes</a></li>
 			<li><a href="index.html#form-elements">Form-elements</a></li>
-			<li><a href="index.html#"></a></li>
+			<li>
+				<a href="index.html#form-input-attributes">Form input attributes</a>
+			</li>
 			<li><a href="index.html#"></a></li>
 			<li><a href="index.html#"></a></li>
 			<li><a href="index.html#"></a></li>
@@ -176,7 +178,7 @@
 			Footnote: Lorem ipsum dolor sit, amet consectetur adipisicing.
 		</figcaption>
 		<hr />
-		<h2 id="html-scripts">HTML Scripts</h2>
+		<h2 id="html-scripts">HTML scripts</h2>
 		<!--Bottom of HTML document-->
 		console.log()
 		<script>
@@ -285,7 +287,7 @@
 			</tfoot>
 		</table>
 		<hr />
-		<h2 id="external-links">External Links</h2>
+		<h2 id="external-links">External links</h2>
 		<a href="./link.html">link.html Page</a>
 		<br />
 		<a href="https://magic.wizards.com/en" target="_blank" rel="nofollow"
@@ -392,7 +394,34 @@
 			<option value="">Red</option>
 			<option value="">Green</option>
 		</select>
+		<hr />
+		<h2 id="form-input-attributes">Form input attributes</h2>
+		<input type="text" value="Urabrask" readonly disabled />
 		<br />
-		
+		<input type="text" placeholder="Name" />
+		<br />
+		<h3>Form login</h3>
+		<form action="./link.html" method="GET" autocomplete="off">
+			<label for="user">User: </label>
+			<input
+				type="text"
+				name="user"
+				id="user"
+				placeholder="Enter your username"
+				pattern="^[A-Za-z]+$"
+				title="The field only accepts letters"
+				required
+			/><br />
+			<label for="password">Password: </label>
+			<input
+				type="password"
+				name="password"
+				id="password"
+				placeholder="Enter your password"
+				required
+			/><br />
+			<input type="submit" />
+			<input type="reset" />
+		</form>
 	</body>
 </html>
