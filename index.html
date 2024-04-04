@@ -58,7 +58,11 @@
 			<li>
 				<a href="index.html#form-input-attributes">Form input attributes</a>
 			</li>
-			<li><a href="index.html#"></a></li>
+			<li>
+				<a href="index.html#selects-radios-checkboxes"
+					>Selects, radios and checkboxes</a
+				>
+			</li>
 			<li><a href="index.html#"></a></li>
 			<li><a href="index.html#"></a></li>
 		</ul>
@@ -401,7 +405,7 @@
 		<input type="text" placeholder="Name" />
 		<br />
 		<h3>Form login</h3>
-		<form action="./link.html" method="GET" autocomplete="off">
+		<form action="./index.html" method="GET" autocomplete="off">
 			<label for="user">User: </label>
 			<input
 				type="text"
@@ -420,6 +424,55 @@
 				placeholder="Enter your password"
 				required
 			/><br />
+			<input type="submit" />
+			<input type="reset" />
+		</form>
+		<hr />
+		<h2 id="selects-radios-checkboxes">Selects, radios and checkboxes</h2>
+		<h3>Form login</h3>
+		<form action="./index.html">
+			<p>Select your format</p>
+			<select name="color" required>
+				<option value="" selected>Select</option>
+				<option value="white">Standard</option>
+				<option value="blue">Explorer</option>
+				<option value="black">Alchemy</option>
+				<option value="red">Historic</option>
+			</select>
+			<p>Select your mana color</p>
+			<input
+				type="radio"
+				name="color"
+				id="radio-white"
+				value="white"
+				required
+			/>
+			<label for="radio-white">White</label>
+			<input type="radio" name="color" id="radio-blue" value="blue" />
+			<label for="radio-blue">Blue</label>
+			<input type="radio" name="color" id="radio-black" value="black" />
+			<label for="radio-black">Black</label>
+			<input type="radio" name="color" id="radio-red" value="red" />
+			<label for="radio-red">Red</label>
+			<input type="radio" name="color" id="radio-green" value="green" />
+			<label for="radio-green">Green</label>
+			<p>Select your type deck</p>
+			<label>
+				<input type="checkbox" name="type" value="aggro" />
+				Aggro
+			</label>
+			<label>
+				<input type="checkbox" name="type" value="combo" />
+				Combo
+			</label>
+			<label>
+				<input type="checkbox" name="type" value="control" />
+				Control
+			</label>
+			<label>
+				<input type="checkbox" name="type" value="midrange" />
+				Midrange
+			</label>
 			<input type="submit" />
 			<input type="reset" />
 		</form>
