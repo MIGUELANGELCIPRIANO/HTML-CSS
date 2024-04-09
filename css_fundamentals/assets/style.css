@@ -46,6 +46,14 @@ p {
 	background-color: steelblue;
 }
 
-.text-white{
+.text-white {
 	color: aliceblue;
+}
+
+.direct-child > li {
+	background-color: steelblue;
+}
+
+.descendant-child b {
+	background-color: steelblue;
 }
