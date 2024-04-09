@@ -4,11 +4,48 @@ selector {
     attribute: value;
 } */
 
-@import url('secondary-stylesheet.css'); 
+@import url('secondary-stylesheet.css');
 /* Bad practice: delay page loading!!! */
 
 body {
 	color: aliceblue;
 	font-family: sans-serif;
 	background-color: #121418;
+}
+
+/*
+Basic selectors 
+1) Tags or html elements
+2) id atributes (#)
+3) Classes or class atributes (.)
+*/
+
+p {
+	color: steelblue;
+}
+
+/* Bad practice: unique identifiers cannot be reused, use them in interaction with JavaScript*/
+#text-2 {
+	color: skyblue;
+}
+
+/* A single html element can have several class attributes */
+.text-20 {
+	font-size: 20px;
+}
+
+.text-16 {
+	font-size: 16px;
+}
+
+.bg-skyblue {
+	background-color: skyblue;
+}
+
+.bg-steelblue {
+	background-color: steelblue;
+}
+
+.text-white{
+	color: aliceblue;
 }
