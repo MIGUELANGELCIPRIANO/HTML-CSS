@@ -50,10 +50,28 @@ p {
 	color: aliceblue;
 }
 
+/* Advanced selectors 
+Child selectors
+*/
+
 .direct-child > li {
 	background-color: steelblue;
 }
 
 .descendant-child b {
+	background-color: steelblue;
+}
+
+/* Advanced selectors 
+Sibling selectors
+*/
+
+/* applies to all sibling elements adjacent to the reference element */
+.general-sibling ~ li {
+	background-color: steelblue;
+}
+
+/* applies to the immediate sibling element adjacent to the reference element */
+.adjacent-sibling + li {
 	background-color: steelblue;
 }
