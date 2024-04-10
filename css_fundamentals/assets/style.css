@@ -50,7 +50,8 @@ p {
 	color: aliceblue;
 }
 
-/* Advanced selectors 
+/* 
+Advanced selectors 
 Child selectors
 */
 
@@ -62,16 +63,55 @@ Child selectors
 	background-color: steelblue;
 }
 
-/* Advanced selectors 
+/* 
+Advanced selectors 
 Sibling selectors
 */
 
-/* applies to all sibling elements adjacent to the reference element */
+/* Applies to all sibling elements adjacent to the reference element */
 .general-sibling ~ li {
 	background-color: steelblue;
 }
 
-/* applies to the immediate sibling element adjacent to the reference element */
+/* Applies to the immediate sibling element adjacent to the reference element */
 .adjacent-sibling + li {
 	background-color: steelblue;
+}
+
+/*
+Advanced selectors 
+Attribute selectors
+*/
+
+.attribute-selectors a[href] {
+	color: skyblue;
+}
+
+.attribute-selectors a[target='_blank'] {
+	font-weight: bold;
+}
+
+/* Applies as long as the link contains the specified value */
+.attribute-selectors a[href*='mtgo'] {
+	font-size: 24px;
+}
+
+/* Applies as long as the link starts with the specified value */
+.attribute-selectors a[href^='https'] {
+	text-decoration: none;
+}
+
+/* Applies as long as the link ends with the specified value */
+.attribute-selectors a[href$='s'] {
+	color: cornflowerblue;
+}
+
+/* Applies as long as the link contains the specified space-separated value within a sequence */
+.attribute-selectors a[class~='arena'] {
+	color: rebeccapurple;
+}
+
+/* Applies as long as the link contains the specified value separated by spaces followed by a hyphen within a sequence */
+.attribute-selectors a[class|='magic'] {
+	color: brown;
 }
