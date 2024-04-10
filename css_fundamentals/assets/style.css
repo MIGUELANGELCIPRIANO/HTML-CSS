@@ -115,3 +115,12 @@ Attribute selectors
 .attribute-selectors a[class|='magic'] {
 	color: brown;
 }
+
+/*
+Advanced selectors 
+Universal selector
+*/
+
+* {
+	font-family: 'Beleren Bold';
+}
