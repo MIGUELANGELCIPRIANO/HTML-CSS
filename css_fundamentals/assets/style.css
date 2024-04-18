@@ -124,3 +124,33 @@ Universal selector
 * {
 	font-family: 'Beleren Bold';
 }
+
+/* Pseudo-classes */
+
+.pseudo-classes-form *:required {
+	border-color: orange;
+}
+
+.pseudo-classes-form *:invalid {
+	border-color: brown;
+}
+
+.pseudo-classes-form *:valid {
+	border-color: cornflowerblue;
+}
+
+.pseudo-classes-form *:focus {
+	background-color: cornsilk;
+}
+
+.pseudo-classes-form *:disabled {
+	border-color: brown;
+}
+
+.pseudo-classes-menu a:visited {
+	color: brown;
+}
+
+.pseudo-classes-menu a:hover {
+	color: orange;
+}
