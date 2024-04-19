@@ -24,7 +24,7 @@ p {
 	color: steelblue;
 }
 
-/* Bad practice: unique identifiers cannot be reused, use them in interaction with JavaScript*/
+/* Bad practice: unique identifiers cannot be reused, use them in interaction with JavaScript */
 #text-2 {
 	color: skyblue;
 }
@@ -254,4 +254,40 @@ Position & Type Pseudo-classes
 	font-size: 18px;
 	display: block;
 	width: 300px;
+}
+
+/* 
+CSS Algorithm 
+Cascading
+Specificity
+*/
+
+/* Label + Id + Class Specificity = (1, 1, 1) */
+blockquote#quote.quote {
+	background-color: orangered; /* Bad practice: using multiple selectors to define an element instead of using advanced selectors */
+}
+
+/* Label Specificity = (0, 0, 1) */
+blockquote {
+	background-color: cadetblue;
+}
+
+/* Id Specificity = (1, 0, 0) */
+#quote {
+	background-color: darkorange;
+}
+
+/* Label + Class Specificity = (0, 1, 1) */
+blockquote.quote {
+	background-color: darkslategray;
+}
+
+/* Class Specificity = (0, 1, 0) */
+.quote {
+	background-color: cornflowerblue;
+}
+
+/* Label + Id Specificity = (1, 0 , 1) */
+blockquote#quote {
+	background-color: brown !important; /* Bad practice: breaks specificity */
 }
