@@ -108,7 +108,7 @@ Attribute selectors
 
 /* Applies as long as the link contains the specified space-separated value within a sequence */
 .attribute-selectors a[class~='arena'] {
-	color: rebeccapurple;
+	color: slateblue;
 }
 
 /* Applies as long as the link contains the specified value separated by spaces followed by a hyphen within a sequence */
@@ -125,7 +125,9 @@ Universal selector
 	font-family: 'Beleren Bold';
 }
 
-/* Pseudo-classes */
+/* Pseudo-classes 
+State Pseudo-classes
+*/
 
 .pseudo-classes-form *:required {
 	border-color: orange;
@@ -153,4 +155,48 @@ Universal selector
 
 .pseudo-classes-menu a:hover {
 	color: orange;
+}
+
+/* Pseudo-classes 
+Position & Type Pseudo-classes
+*/
+
+.pseudo-classes-list li:first-child {
+	color: cornsilk;
+}
+
+.pseudo-classes-list li:last-child {
+	color: forestgreen;
+}
+
+.pseudo-classes-list li:nth-child(2) {
+	color: cornflowerblue;
+}
+
+.pseudo-classes-list li:nth-child(3) {
+	color: gray;
+}
+
+.pseudo-classes-list li:nth-child(4n) {
+	color: brown;
+}
+
+.article-pseudo-class p:first-of-type {
+	color: cornsilk;
+}
+
+.article-pseudo-class p:last-of-type {
+	color: forestgreen;
+}
+
+.article-pseudo-class p:nth-of-type(2) {
+	color: cornflowerblue;
+}
+
+.article-pseudo-class p:nth-of-type(3) {
+	color: brown;
+}
+
+.article-pseudo-class *:not(p, header, footer) {
+	color: gray;
 }
