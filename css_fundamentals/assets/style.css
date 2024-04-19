@@ -200,3 +200,42 @@ Position & Type Pseudo-classes
 .article-pseudo-class *:not(p, header, footer) {
 	color: gray;
 }
+
+/* Pseudo-elements */
+
+.pseudo-element-white {
+	color: cornsilk;
+}
+
+.pseudo-element-white::before {
+	content: '⚪';
+}
+
+.pseudo-element-white::after {
+	content: '⚪';
+}
+
+.pseudo-element-blue {
+	color: cornflowerblue;
+}
+
+.pseudo-element-blue::first-letter {
+	font-size: 32px;
+}
+
+.pseudo-element-red {
+	color: brown;
+}
+
+.pseudo-element-red::first-line {
+	color: orangered;
+}
+
+*::selection {
+	color: orange;
+	background-color: black;
+}
+
+.pseudo-element-input::placeholder {
+	color: orangered;
+}
