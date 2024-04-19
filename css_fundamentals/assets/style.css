@@ -239,3 +239,19 @@ Position & Type Pseudo-classes
 .pseudo-element-input::placeholder {
 	color: orangered;
 }
+
+/* Selector grouping */
+
+.selector-grouping-form input[type='text'],
+.selector-grouping-form input[type='email'],
+.selector-grouping-form textarea {
+	color: white;
+	border-color: brown;
+	border-width: 2px;
+	border-style: dashed;
+	margin-bottom: 2px;
+	background-color: #121418;
+	font-size: 18px;
+	display: block;
+	width: 300px;
+}
