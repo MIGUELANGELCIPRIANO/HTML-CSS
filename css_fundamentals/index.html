@@ -38,7 +38,7 @@
 					>Inline CSS invocation form</a
 				>
 			</li>
-			<li><a href="index.html#basic-selectors ">Basic selectors </a></li>
+			<li><a href="index.html#basic-selectors">Basic selectors</a></li>
 			<li><a href="index.html#advanced-selectors">Advanced selectors</a></li>
 			<li><a href="index.html#pseudo-classes">Pseudo-classes</a></li>
 			<li><a href="index.html#pseudo-elements">Pseudo-elements</a></li>
@@ -74,7 +74,7 @@
 			Inline CSS invocation form
 		</h2>
 		<hr />
-		<h2 id="basic-selectors ">Basic selectors</h2>
+		<h2 id="basic-selectors">Basic selectors</h2>
 		<p>
 			Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus,
 			dolorum.
@@ -253,7 +253,7 @@
 			placeholder="Enter your name"
 		/>
 		<hr />
-		<h2 class="selector-grouping">Selector grouping</h2>
+		<h2 id="selector-grouping">Selector grouping</h2>
 		<form class="selector-grouping-form">
 			<input type="text" name="name" placeholder="Enter your name" />
 			<input type="email" name="email" placeholder="Enter your email" />
@@ -266,13 +266,24 @@
 			<input type="submit" />
 		</form>
 		<hr />
-		<h2>CSS Algorithm</h2>
+		<h2 id="css-algorithm">CSS Algorithm</h2>
 		<h3>Cascading</h3>
 		<i
 			>"It is the mechanism in which the browser applies the styles taking into
 			account the origin of the code and order of appearance. Firstly, there is
 			the User Agent or default styles of the browser, secondly the user's
 			customisations and thirdly the styles of the document's author."</i
+		>
+		<h3>Specificity</h3>
+		<i
+			>"It is the weight that a selector has when there is a conflict of
+			styles."<br />
+			It is calculated as follows: <br />
+			Labels and pseudoelements = 0,0,0,1 <br />
+			Classes, attributes and pseudo-classes = 0,0,1,0 <br />
+			Id's = 0,1,0,0 <br />
+			Inline Styles = 1,0,0,0 <br />
+			!important = Breaks specificity</i
 		>
 		<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 		<hr />
