@@ -260,6 +260,7 @@ Position & Type Pseudo-classes
 CSS Algorithm 
 Cascading
 Specificity
+Inheritance
 */
 
 /* Label + Id + Class Specificity = (1, 1, 1) */
@@ -270,6 +271,8 @@ blockquote#quote.quote {
 /* Label Specificity = (0, 0, 1) */
 blockquote {
 	background-color: cadetblue;
+	font-size: 20px;
+	border-style: dotted;
 }
 
 /* Id Specificity = (1, 0, 0) */
@@ -290,4 +293,10 @@ blockquote.quote {
 /* Label + Id Specificity = (1, 0 , 1) */
 blockquote#quote {
 	background-color: brown !important; /* Bad practice: breaks specificity */
+}
+
+blockquote cite {
+	background-color: black;
+	background-color: inherit;
+	font-size: 16px;
 }
