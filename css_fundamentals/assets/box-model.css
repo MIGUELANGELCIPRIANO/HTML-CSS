@@ -17,8 +17,11 @@ Box model: It is the archetype by which CSS structures its elements based on dif
 */
 
 h1 {
-	border-width: 2px;
-	border-style: solid;
-	width: 220px;
+	width: 212px;
 	height: 35px;
+	/* Shorthand properties */
+	border-color: brown;
+	border-width: 2px; /* thin = 1px, medium = 3px, thick = 5px */
+	border-style: dotted;
+	border: 2px dashed steelblue;
 }
