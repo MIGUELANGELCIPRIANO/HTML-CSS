@@ -10,10 +10,10 @@ body {
 
 /*
 Box model: It is the archetype by which CSS structures its elements based on different properties:
-	1. Content: Content (text) of the HTML element.
-	2. Border: Delimiter of the HTML element.
-	3. Padding: Internal distance between the border and the content.
-	4. Margin: External distance between the HTML element and adjacent elements.
+	1. Content: Content (text) of the HTML element
+	2. Border: Delimiter of the HTML element
+	3. Padding: Internal distance between the border and the content
+	4. Margin: External distance between the HTML element and adjacent elements
 */
 
 h1 {
@@ -24,4 +24,19 @@ h1 {
 	border-width: 2px; /* thin = 1px, medium = 3px, thick = 5px */
 	border-style: dotted;
 	border: 2px dashed steelblue;
+}
+
+.box-1,
+.box-2 {
+	background-color: brown;
+	border: medium solid orangered;
+	/* 
+	Margin & padding:
+	.1 value => 4 sides
+	.2 values => 1st value = vertical, 2nd value = horizontal
+	.3 values => 1st value = top, 2nd value = horizontal, 3st value = bottom
+	.4 values => 1st value = top, 2nd value = right, 3st value = bottom, 4th value = left
+	*/
+	padding: 10px 30px;
+	margin: 10px;
 }
