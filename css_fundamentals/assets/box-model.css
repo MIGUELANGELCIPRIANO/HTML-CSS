@@ -40,3 +40,23 @@ h1 {
 	padding: 10px 30px;
 	margin: 10px;
 }
+
+/* 
+Line box:
+	- Occupies the necessary space for its content
+	- No modifiable dimensions (height, width)
+	-Allow for other adjacent elements
+	- Padding and margin, push adjacent elements horizontally, NEVER VERTICAL
+ Block box:
+	- Occupy the entire available width
+	- They have modifiable dimensions (height, width)
+	- They do not allow other adjacent elements, even if a width is specified
+ */
+
+.block-box,
+.line-box1 {
+	background-color: steelblue;
+	width: 550px;
+	border: medium dotted white;
+	margin: 30px;
+}
