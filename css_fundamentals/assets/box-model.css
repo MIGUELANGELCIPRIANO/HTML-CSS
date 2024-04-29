@@ -182,3 +182,16 @@ html {
 .article {
 	clear: both;
 }
+
+/* Vertical margin collapse */
+
+.margin-collapse {
+	background-color: brown;
+}
+
+.margin-collapse section {
+	border: thin solid black;
+	margin-top: 16px;
+	margin-bottom: 16px;
+	/* Coupling of the vertical margins between adjacent elements */
+}
