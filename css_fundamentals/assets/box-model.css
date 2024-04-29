@@ -62,7 +62,7 @@ Line box:
 }
 
 /* 
-display property
+Display property:
 inline
 block
 inline-block: It behaves as a line element but accepts to modify its dimensions
@@ -89,6 +89,8 @@ grid
 	visibility: hidden;
 }
 
+/* Overflow property */
+
 .overflow {
 	background-color: brown;
 	width: 300px;
@@ -99,4 +101,66 @@ grid
 	overflow: auto;
 	/* overflow-x: scroll;
 	overflow-y: scroll; */
+}
+
+/* Box sizing:
+content: The width and height of the element only apply to the content of the element
+border-box: The width and height of the element applyto all parts of the element, the content, the padding and the borders
+*/
+
+.box-sizing-content {
+	background-color: darkslategray;
+	box-sizing: content-box;
+	width: 600px;
+	height: 120px;
+	padding: 10px;
+	margin-bottom: 10px;
+	border: thin dotted;
+	/* 
+	width = 600px + 10px + 10px + 1px + 1px = 622px
+	height = 120px + 10px + 10px + 1px + 1px = 142px
+	*/
+}
+
+.box-sizing-border {
+	background-color: darkslategray;
+	box-sizing: border-box;
+	width: 600px;
+	height: 120px;
+	padding: 10px;
+	margin-bottom: 10px;
+	border: thin dotted;
+	/* 
+	width = 578px + 10px + 10px + 1px + 1px = 600px
+	height = 98px + 10px + 10px + 1px + 1px = 120px
+	*/
+}
+
+.container {
+	background-color: darkslategray;
+	width: 600px;
+	height: 100px;
+	margin-top: 20px;
+}
+
+.container > * {
+	box-sizing: border-box;
+	float: left;
+	width: 200px;
+	border: thin solid;
+	padding: 10px;
+}
+
+/* 
+https://www.paulirish.com/2012/box-sizing-border-box-ftw/
+Apply a natural box layout model to all elements, but allowing components to change 
+*/
+
+html {
+	box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
 }
