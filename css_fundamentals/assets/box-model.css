@@ -73,8 +73,9 @@ flex
 grid
 */
 
-.none-box,
-.line-block-box {
+.one-box,
+.line-block-box,
+.hidden-box {
 	background-color: darkolivegreen;
 	padding: 16px;
 	margin: 8px;
@@ -82,4 +83,20 @@ grid
 
 .line-block-box {
 	display: inline-block;
+}
+
+.hidden-box {
+	visibility: hidden;
+}
+
+.overflow {
+	background-color: brown;
+	width: 300px;
+	height: 100px;
+	overflow: visible;
+	overflow: hidden;
+	overflow: scroll;
+	overflow: auto;
+	/* overflow-x: scroll;
+	overflow-y: scroll; */
 }
