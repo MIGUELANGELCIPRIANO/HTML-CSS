@@ -193,5 +193,19 @@ html {
 	border: thin solid black;
 	margin-top: 16px;
 	margin-bottom: 16px;
-	/* Coupling of the vertical margins between adjacent elements */
+	/* Coupling of vertical margins between adjacent elements */
+}
+
+/* Adding horizontal margins */
+
+.adding-margin {
+	background-color: brown;
+}
+
+.adding-margin span {
+	border: thin solid black;
+	display: inline-block;
+	margin-right: 10px;
+	margin-left: 10px;
+	/* Addition of horizontal margins between adjacent elements  */
 }
