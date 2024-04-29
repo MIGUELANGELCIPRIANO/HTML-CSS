@@ -60,3 +60,26 @@ Line box:
 	border: medium dotted white;
 	margin: 30px;
 }
+
+/* 
+display property
+inline
+block
+inline-block: It behaves as a line element but accepts to modify its dimensions
+none
+table
+list-item
+flex
+grid
+*/
+
+.none-box,
+.line-block-box {
+	background-color: darkolivegreen;
+	padding: 16px;
+	margin: 8px;
+}
+
+.line-block-box {
+	display: inline-block;
+}
