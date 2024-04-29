@@ -145,7 +145,7 @@ border-box: The width and height of the element applyto all parts of the element
 
 .container > * {
 	box-sizing: border-box;
-	float: left;
+	float: left; /* Bad practice: Overlapping of adjacent non-floating elements */
 	width: 200px;
 	border: thin solid;
 	padding: 10px;
@@ -163,4 +163,22 @@ html {
 *:before,
 *:after {
 	box-sizing: inherit;
+}
+
+/* Floats */
+
+.container-floats {
+	background-color: darkolivegreen;
+}
+
+.float-right {
+	float: right;
+}
+
+.float-left {
+	float: left;
+}
+
+.article {
+	clear: both;
 }
