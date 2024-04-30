@@ -156,14 +156,14 @@ https://www.paulirish.com/2012/box-sizing-border-box-ftw/
 Apply a natural box layout model to all elements, but allowing components to change 
 */
 
-html {
+/* html {
 	box-sizing: border-box;
 }
 *,
 *:before,
 *:after {
 	box-sizing: inherit;
-}
+} */
 
 /* Floats */
 
@@ -208,4 +208,17 @@ html {
 	margin-right: 10px;
 	margin-left: 10px;
 	/* Addition of horizontal margins between adjacent elements  */
+}
+
+/* Box centering */
+
+.website {
+	border: thin dotted white;
+	background-color: darkolivegreen;
+	width: 150px;
+	height: 100px;
+	padding: 16px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 50px;
 }
