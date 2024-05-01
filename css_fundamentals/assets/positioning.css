@@ -35,3 +35,8 @@ To move positioned elements, the following properties are activated:
 The top and left properties take precedence over bottom and right, respectively
 These 5 properties do not work with the static value
 */
+
+.static{
+	background-color: cornflowerblue;
+	position: static;
+}
