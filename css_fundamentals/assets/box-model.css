@@ -103,7 +103,8 @@ grid
 	overflow-y: scroll; */
 }
 
-/* Box sizing:
+/*
+Box sizing:
 content: The width and height of the element only apply to the content of the element
 border-box: The width and height of the element applyto all parts of the element, the content, the padding and the borders
 */
