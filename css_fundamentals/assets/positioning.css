@@ -86,3 +86,16 @@ absolute: The element loses its original dimensions and position in the document
 	left: 0;
 	top: 10px;
 }
+
+/*
+fixed: The element loses its original dimensions and position in the flow of the document.
+If it moves it takes as reference the HTML document and remains fixed in the position, when the scroll is moved, the element will not move, it remains FIXED
+*/
+
+.fixed {
+	background-color: darkolivegreen;
+	position: fixed;
+	width: 100px;
+	top: 80px;
+	right: 0;
+}
