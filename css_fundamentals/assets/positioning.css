@@ -48,7 +48,7 @@ static: This is the default value, it means that the element respects the flow o
 }
 
 /* 
-relative: The element keeps its original dimensions and position in the document flow.
+relative: The element keeps its original dimensions and position in the document flow
 If it is moved it takes as reference its original position
 */
 
@@ -61,8 +61,9 @@ If it is moved it takes as reference its original position
 }
 
 /*
-absolute: The element loses its original dimensions and position in the document flow. If it is moved it can take as reference 2 elements:
-  1) The first ancestor with relative positioning.
+absolute: The element loses its original dimensions and position in the document flow
+If it is moved it can take as reference 2 elements:
+  1) The first ancestor with relative positioning
   2) If it does not find a relative ancestor, it moves with respect to the HTML document
 */
 
@@ -81,14 +82,14 @@ absolute: The element loses its original dimensions and position in the document
 }
 
 .absolute-child {
-	background-color: darkorchid;
+	background-color: black;
 	position: absolute;
 	left: 0;
 	top: 10px;
 }
 
 /*
-fixed: The element loses its original dimensions and position in the flow of the document.
+fixed: The element loses its original dimensions and position in the flow of the document
 If it moves it takes as reference the HTML document and remains fixed in the position, when the scroll is moved, the element will not move, it remains FIXED
 */
 
@@ -98,4 +99,30 @@ If it moves it takes as reference the HTML document and remains fixed in the pos
 	width: 100px;
 	top: 80px;
 	right: 0;
+}
+
+/*
+sticky: is a combination of relative and fixed positioning, for this positioning the properties of top, left, bottom and right do not move the element,
+they serve as a reference point, while they do not reach that value the element behaves as relative, when it reaches it becomes fixed
+For this behavior to work the sticky element must be a direct child of the body or its container element must have defined dimensions,
+and will only be sticky within the dimensions of its parent container
+*/
+
+.sticky {
+	background-color: darkslateblue;
+	position: sticky;
+	width: 200px;
+	top: 235px;
+}
+
+.sticky-parent {
+	border: medium dashed white;
+	width: 300px;
+	height: 300px;
+}
+
+.sticky-child {
+	background-color: lightslategray;
+	position: sticky;
+	top: 255px;
 }
