@@ -36,7 +36,9 @@ The top and left properties take precedence over bottom and right, respectively
 These 5 properties do not work with the static value
 */
 
-/* static: This is the default value, it means that the element respects the flow of the HTML document, so it cannot be moved or positioned */
+/*
+static: This is the default value, it means that the element respects the flow of the HTML document, so it cannot be moved or positioned
+*/
 
 .static {
 	background-color: cornflowerblue;
@@ -45,13 +47,42 @@ These 5 properties do not work with the static value
 	left: 10px;
 }
 
-/* relative: The element keeps its original dimensions and position in the document flow.
-If it is moved it takes as reference its original position */
+/* 
+relative: The element keeps its original dimensions and position in the document flow.
+If it is moved it takes as reference its original position
+*/
 
 .relative {
-	background-color: coral;
+	background-color: cadetblue;
 	position: relative;
 	width: 300px;
-	top: 20px;
+	top: 80px;
 	left: 50px;
+}
+
+/*
+absolute: The element loses its original dimensions and position in the document flow. If it is moved it can take as reference 2 elements:
+  1) The first ancestor with relative positioning.
+  2) If it does not find a relative ancestor, it moves with respect to the HTML document
+*/
+
+.absolute {
+	background-color: tomato;
+	position: absolute;
+	top: 140px;
+	left: 100px;
+}
+
+.relative-parent {
+	background-color: crimson;
+	position: relative;
+	width: 300px;
+	height: 40px;
+}
+
+.absolute-child {
+	background-color: darkorchid;
+	position: absolute;
+	left: 0;
+	top: 10px;
 }
