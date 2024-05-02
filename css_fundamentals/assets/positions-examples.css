@@ -21,7 +21,26 @@ body {
 .sticky-header {
 	background-color: mediumpurple;
 	position: sticky;
-	top: 0;
+	top: 50px;
 	width: 100%;
 	height: 50px;
+}
+
+.slide {
+	background-color: royalblue;
+	width: 100%;
+	height: 100vh;
+}
+
+.slide:nth-child(odd) {
+	background-color: mediumslateblue;
+}
+
+.slide-title {
+	background-color: orchid;
+	padding: 16px;
+	position: sticky;
+	top: 90px;
+	margin-top: 0;
+	margin-bottom: 0;
 }
