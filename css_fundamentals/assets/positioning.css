@@ -102,7 +102,7 @@ If it moves it takes as reference the HTML document and remains fixed in the pos
 }
 
 /*
-sticky: is a combination of relative and fixed positioning, for this positioning the properties of top, left, bottom and right do not move the element,
+sticky: Is a combination of relative and fixed positioning, for this positioning the properties of top, left, bottom and right do not move the element,
 they serve as a reference point, while they do not reach that value the element behaves as relative, when it reaches it becomes fixed
 For this behavior to work the sticky element must be a direct child of the body or its container element must have defined dimensions,
 and will only be sticky within the dimensions of its parent container
@@ -125,4 +125,52 @@ and will only be sticky within the dimensions of its parent container
 	background-color: lightslategray;
 	position: sticky;
 	top: 255px;
+}
+
+/*
+z-index: Property that allows to control the depth of the positioned elements,
+its default value is auto, it accepts positive, negative and zero numbers
+The higher the value the element is more to the front, the lower the value the more to the back
+A parent element can never be on top of its child elements,
+however the child elements can by giving them a negative value and that the parent element has no z-index value defined
+*/
+
+.z-index-1,
+.z-index-2 {
+	background-color: darkslategray;
+	border: thin solid white;
+	position: relative;
+	width: 200px;
+	height: 100px;
+	margin-top: 10px;
+}
+
+.z-index-1 {
+	z-index: 1;
+}
+
+.z-index-2 {
+	top: -70px;
+	left: 50px;
+	z-index: 2;
+}
+
+.z-index-parent {
+	background-color: firebrick;
+	width: 200px;
+	height: 200px;
+	position: relative;
+	/* z-index: 2; */
+	/* It does not work to give a higher z-index to position the parent element ahead of the child element */
+}
+
+.z-index-child {
+	background-color: black;
+	position: relative;
+	width: 150px;
+	height: 60px;
+	top: -30px;
+	left: 70px;
+	z-index: -1;
+	/* However, it is possible to place the child element after the parent element by setting a negative z-index value */
 }
