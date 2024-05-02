@@ -12,8 +12,8 @@ body {
 Box model: It is the archetype by which CSS structures its elements based on different properties:
 	1. Content: Content (text) of the HTML element
 	2. Border: Delimiter of the HTML element
-	3. Padding: Internal distance between the border and the content
-	4. Margin: External distance between the HTML element and adjacent elements
+	3. Padding: Internal distance between the border and the content, CAN NEVER HAVE NEGATIVE VALUES
+	4. Margin: External distance between the HTML element and adjacent elements, admits negative values
 */
 
 h1 {
