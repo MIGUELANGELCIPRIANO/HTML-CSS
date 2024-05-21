@@ -19,8 +19,6 @@ body {
 /*
 HEX(Hexadecimal system)
 0123456789ABCDEF
-
-CMYK(CyanMagentaYellowKey) for printed environments
 */
 
 .hex {
@@ -52,4 +50,38 @@ For each color channel the values range from 0 - 255
 	color: rgb(255, 255, 255);
 	color: rgb(255, 100, 0);
 	color: rgba(255, 100, 0, 0.75);
+}
+
+/* 
+HSL(HueSaturationLightness) and CMYK(CyanMagentaYellowKey) for printed environments
+
+1st(Hue):
+
+0°: Red
+60°: Yellow
+120°: Green
+180°: Cyan
+240°: Blue
+300°: Magenta
+
+2nd(Saturation): 
+
+0%: Grayscale
+100%: Pure color
+
+3rd(Lightness): 
+
+0%: Black
+100%: White
+*/
+
+.hsl {
+	color: hsl(0, 0%, 0%);
+	color: hsl(0, 0%, 100%);
+	color: hsl(0, 100%, 50%);
+	color: hsl(60, 100%, 50%);
+	color: hsl(120, 100%, 50%);
+	color: hsl(180, 100%, 50%);
+	color: hsl(240, 100%, 50%);
+	color: hsl(300, 100%, 50%);
 }
