@@ -7,3 +7,11 @@ body {
 * {
 	font-family: 'Beleren Bold';
 }
+
+/* COLOR BY NAME */
+
+.color-by-name {
+	background-color: brown;
+	color: whitesmoke;
+	border: thin solid whitesmoke;
+}
