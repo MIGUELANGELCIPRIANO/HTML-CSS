@@ -20,7 +20,6 @@ body {
 HEX(Hexadecimal system)
 0123456789ABCDEF
 
-RGB(RedGreenBlue) for digital environments
 CMYK(CyanMagentaYellowKey) for printed environments
 */
 
@@ -35,4 +34,22 @@ CMYK(CyanMagentaYellowKey) for printed environments
 	color: #00f;
 	color: #ffffff;
 	color: #fff;
+}
+
+/*
+RGB(RedGreenBlue) for digital environments
+
+8 bits for channel
+Bit 2 ^ 8 = 256
+For each color channel the values range from 0 - 255
+*/
+
+.rgb {
+	color: rgb(0, 0, 0);
+	color: rgb(255, 0, 0);
+	color: rgb(0, 255, 0);
+	color: rgb(0, 0, 255);
+	color: rgb(255, 255, 255);
+	color: rgb(255, 100, 0);
+	color: rgba(255, 100, 0, 0.75);
 }
