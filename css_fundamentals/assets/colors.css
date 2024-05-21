@@ -85,3 +85,13 @@ HSL(HueSaturationLightness) and CMYK(CyanMagentaYellowKey) for printed environme
 	color: hsl(240, 100%, 50%);
 	color: hsl(300, 100%, 50%);
 }
+
+/* 
+TRANSPARENT: Equivalent to apply rgba(0,0,0,0)
+CURRENTCOLOR: Inherits the default value of the browser or the one assigned to the color property of the nearest ancestor
+*/
+
+.transparent-current {
+	background-color: transparent;
+	background-color: currentColor;
+}
