@@ -13,23 +13,40 @@ img {
 }
 
 /* 
-UNIDADES DE MEDIDA
-ABSOLUTAS: Su valor no cmabia, unidades del mundo real
+UNITS OF MEASUREMENT
+ABSOLUTE: Their value does not change, real-world units
     pc, cm, mm, in, Q
     pt(1/72in)
     px(1/96in)
-RELATIVAS: Su valor es relativo al contexto
-    em, rem, ex, ch (Tamaño de fuente)
-        em: basado en la anchura de la "m" de la fuente del elemento
-        rem: basado en la anchura de la "m" de la fuente del elemento raíz (html)
-        ex: basado en la altura de la "x" de la fuente del elemento
-        ch: basado en la altura de la "0" de la fuente del elemento
-    % (Tamaño del contenedor)
-    vw, vh, vmin, vmax (Tamaño del viewport)
-        vw: ancho del viewport van de 1 a 100 
-        vh: alto del viewport van de 1 a 100
-        vmin: entre vw y vh toma el que tenga menor valor
-        vmax: entre vw y vh toma el que tenga mayor valor
+RELATIVE: Their value is relative to the context (RECOMMENDED FOR RESPONSIVE DESIGN!)
+    em, rem, ex, ch (Font size)
+        em: based on the width of the "m" in the element font
+        rem: based on the width of the "m" of the font of the root element (html)
+        ex: based on the height of the "x" of the element font
+        ch: based on the height of the "0" of the element's font
+    % (Container size)
+    vw, vh, vmin, vmax (viewport size)
+        vw: width of the viewport ranging from 1 to 100 
+        vh: height of the viewport ranging from 1 to 100
+        vmin: between vw and vh take whichever has the smaller value
+        vmax: between vw and vh takes whichever has the greater value
 
-Conversor de unidades: http://pxtoem.com/
+UNIT CONVERTER: http://pxtoem.com/
 */
+
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: inherit;
+}
+
+.pixels {
+	background-color: cornflowerblue;
+	width: 500px;
+	padding: 20px;
+	border: thick solid;
+}
