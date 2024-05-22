@@ -1,0 +1,35 @@
+body {
+	color: aliceblue;
+	font-family: sans-serif;
+	background-color: #121418;
+}
+
+* {
+	font-family: 'Beleren Bold';
+}
+
+img {
+	width: 50%;
+}
+
+/* 
+UNIDADES DE MEDIDA
+ABSOLUTAS: Su valor no cmabia, unidades del mundo real
+    pc, cm, mm, in, Q
+    pt(1/72in)
+    px(1/96in)
+RELATIVAS: Su valor es relativo al contexto
+    em, rem, ex, ch (Tamaño de fuente)
+        em: basado en la anchura de la "m" de la fuente del elemento
+        rem: basado en la anchura de la "m" de la fuente del elemento raíz (html)
+        ex: basado en la altura de la "x" de la fuente del elemento
+        ch: basado en la altura de la "0" de la fuente del elemento
+    % (Tamaño del contenedor)
+    vw, vh, vmin, vmax (Tamaño del viewport)
+        vw: ancho del viewport van de 1 a 100 
+        vh: alto del viewport van de 1 a 100
+        vmin: entre vw y vh toma el que tenga menor valor
+        vmax: entre vw y vh toma el que tenga mayor valor
+
+Conversor de unidades: http://pxtoem.com/
+*/
