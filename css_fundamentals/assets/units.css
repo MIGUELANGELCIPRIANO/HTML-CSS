@@ -100,3 +100,16 @@ html {
 	background-color: brown;
 	width: 10ch;
 }
+
+.height-parent {
+	background-color: indianred;
+	margin: 5%;
+	width: 90%;
+	height: 150px;
+}
+
+.height-child {
+	background-color: brown;
+	width: 50%;
+	height: 100%;
+}
