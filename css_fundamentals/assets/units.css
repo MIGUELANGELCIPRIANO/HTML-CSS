@@ -31,7 +31,7 @@ RELATIVE: Their value is relative to the context (RECOMMENDED FOR RESPONSIVE DES
         vmin: between vw and vh take whichever has the smaller value
         vmax: between vw and vh takes whichever has the greater value
 
-UNIT CONVERTER: http://pxtoem.com/
+UNIT CONVERTER: https://pxtoem.com.au/
 */
 
 html {
@@ -46,22 +46,37 @@ html {
 
 .pixels {
 	background-color: cornflowerblue;
-	width: 500px;
-	padding: 20px;
 	border: thick solid;
+	padding: 20px;
+	width: 500px;
 }
 
 .ems {
 	background-color: darkolivegreen;
-	padding: 1.5em;
-	font-size: 1.25em;
-	border: thick solid;
+	border: thick solid; /* 5px */
+	padding: 1.5em; /* 30px */
+	font-size: 1.25em; /* 20px */
 }
 
 .em-child {
 	background-color: darkslategray;
-	font-size: 1.5em;
-	margin: 0.5em;
-	padding: 1.5em;
-	border: medium solid;
+	margin: 0.5em; /* 15px */
+	border: medium solid; /* 3px */
+	padding: 1.5em; /* 45px */
+	font-size: 1.5em; /* 30px */
+}
+
+.rems {
+	background-color: darkorange;
+	border: thick solid; /* 5px */
+	padding: 1.5rem; /* 24px */
+	font-size: 1.25rem; /* 20 px */
+}
+
+.rem-child {
+	background-color: indianred;
+	margin: 0.5rem; /* 8px */
+	border: medium solid; /* 3px */
+	padding: 1.5rem; /* 24px */
+	font-size: 1.5rem; /* 24px */
 }
