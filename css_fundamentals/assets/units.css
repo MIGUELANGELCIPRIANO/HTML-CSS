@@ -95,3 +95,8 @@ html {
 	padding: 1.5ex; /* 6.9975px */
 	font-size: 1.5ex; /* 9.33px */
 }
+
+.chs {
+	background-color: brown;
+	width: 10ch;
+}
