@@ -1,7 +1,8 @@
 body {
 	color: aliceblue;
 	font-family: sans-serif;
-	background-color: #121418;
+	background-color: darkslategray;
+	margin: 0;
 }
 
 * {
@@ -36,6 +37,7 @@ UNIT CONVERTER: https://pxtoem.com.au/
 
 html {
 	box-sizing: border-box;
+	background-color: #121418;
 }
 
 *,
@@ -44,12 +46,22 @@ html {
 	box-sizing: inherit;
 }
 
+/*
+ABSOLUTE
+    PIXELS
+*/
+
 .pixels {
 	background-color: cornflowerblue;
 	border: thick solid;
 	padding: 20px;
 	width: 500px;
 }
+
+/*
+RELATIVE
+    EM, REM, EX, CH
+*/
 
 .ems {
 	background-color: darkolivegreen;
@@ -101,6 +113,11 @@ html {
 	width: 10ch;
 }
 
+/*
+RELATIVE
+    PERCENT
+*/
+
 .height-parent {
 	background-color: indianred;
 	margin: 5%;
@@ -112,4 +129,25 @@ html {
 	background-color: brown;
 	width: 50%;
 	height: 100%;
+}
+
+/*
+RELATIVE
+    VW, VH, VMIN, VMAX
+*/
+
+.viewport {
+	background-color: brown;
+	/* NOTE: Note that the body tag has default margins and that the browser scrollbars are also part of the graphic window. */
+	width: 100vw;
+	height: 30vh;
+}
+
+.vmin,
+.vmax {
+	background-color: cornflowerblue;
+	margin: 5px;
+	border: medium solid;
+	width: 50vmax;
+	height: 50vmin;
 }
