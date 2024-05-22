@@ -8,6 +8,10 @@ body {
 	font-family: 'Beleren Bold';
 }
 
+img {
+	width: 50%;
+}
+
 /* COLOR BY NAME */
 
 .color-by-name {
@@ -84,10 +88,6 @@ HSL(HueSaturationLightness) and CMYK(CyanMagentaYellowKey) for printed environme
 	color: hsl(180, 100%, 50%);
 	color: hsl(240, 100%, 50%);
 	color: hsl(300, 100%, 50%);
-}
-
-img {
-	width: 50%;
 }
 
 /* 
