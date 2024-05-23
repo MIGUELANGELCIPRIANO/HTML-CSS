@@ -1,10 +1,17 @@
+html {
+	box-sizing: border-box;
+}
+
 body {
 	color: aliceblue;
 	font-family: sans-serif;
 	background-color: #121418;
 }
 
-* {
+*,
+*::after,
+*::before {
+	box-sizing: inherit;
 	font-family: 'Beleren Bold';
 }
 
@@ -40,4 +47,15 @@ img {
 .custom-props-3 {
 	font-size: var(--font-size);
 	border: var(--border);
+}
+
+/* CALC() */
+
+.ch-10 {
+	--padding-size: 2ch;
+	--num-ch: 10ch;
+	background-color: var(--dafault-color);
+	padding: var(--padding-size);
+	width: calc(var(--num-ch) + var(--padding-size) * 2);
+	font-size: 1.5rem;
 }
