@@ -18,6 +18,13 @@ img {
 	width: 50%;
 }
 
+h1,
+a,
+h2,
+footer {
+	font-family: 'Beleren Bold';
+}
+
 /*
 FONT STYLES
 Shorthand property: 
@@ -61,4 +68,33 @@ FONT-DISPLAY:
 
 .beleren {
 	font-family: 'Beleren Bold', sans-serif;
+}
+
+/*
+TEXT STYLES
+Shorthand property: 
+font: font-style font-variant font-weight font-size / line-height font-family
+*/
+
+.text-1 {
+	font-family: 'Beleren Bold';
+	background-color: indianred;
+	border: thin solid;
+	padding: 1rem;
+	width: 70%;
+	text-align: justify;
+	text-decoration: none;
+	text-indent: 1rem;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	text-transform: capitalize;
+	letter-spacing: 0.25rem;
+	word-break: break-all;
+	word-spacing: 1rem;
+}
+
+.text-2 {
+	font-family: 'Beleren Bold';
+	writing-mode: vertical-lr;
 }
