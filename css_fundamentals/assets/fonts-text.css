@@ -18,3 +18,19 @@ body {
 img {
 	width: 50%;
 }
+
+/*
+FONT STYLES
+Shorthand property: 
+font: font-style font-variant font-weight font-size / line-height font-family
+*/
+
+.font {
+	/* font-family: 'Beleren Bold';
+	font-size: 18px;
+	font-weight: bold;
+	font-style: italic;
+	font-variant: small-caps;
+	line-height: 1.5; */
+	font: italic small-caps bold 18px / 1.5 'Beleren Bold';
+}
