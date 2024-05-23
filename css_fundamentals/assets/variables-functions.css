@@ -59,3 +59,11 @@ img {
 	width: calc(var(--num-ch) + var(--padding-size) * 2);
 	font-size: 1.5rem;
 }
+
+/* MIN() & MAX() */
+
+.min-max {
+	background-color: var(--dafault-color);
+	width: min(300px, 20vw);
+	height: max(200px, 25vh);
+}
