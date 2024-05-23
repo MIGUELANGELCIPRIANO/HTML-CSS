@@ -11,3 +11,33 @@ body {
 img {
 	width: 50%;
 }
+
+/* CUSTOM PROPERTIES */
+
+:root {
+	--dafault-color: indianred;
+}
+
+.custom-props-1 {
+	--primary-color: brown;
+	--font-size: 18px;
+}
+
+.title-props {
+	color: var(--primary-color);
+	color: var(--dafault-color);
+}
+
+.custom-props-1 {
+	background-color: var(--primary-color);
+}
+
+.custom-props-2 {
+	border: var(--border);
+	padding: 1rem;
+}
+
+.custom-props-3 {
+	font-size: var(--font-size);
+	border: var(--border);
+}
