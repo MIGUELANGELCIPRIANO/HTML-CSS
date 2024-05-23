@@ -21,6 +21,7 @@ img {
 h1,
 a,
 h2,
+h3,
 footer {
 	font-family: 'Beleren Bold';
 }
@@ -97,4 +98,24 @@ font: font-style font-variant font-weight font-size / line-height font-family
 .text-2 {
 	font-family: 'Beleren Bold';
 	writing-mode: vertical-lr;
+}
+
+/* MATERIAL SIMBOLS & ICONS */
+
+.material-symbols-outlined {
+	font-family: 'Material Symbols Outlined';
+	font-weight: normal;
+	font-style: normal;
+	font-size: 24px; /* Preferred icon size */
+	display: inline-block;
+	line-height: 1;
+	text-transform: none;
+	letter-spacing: normal;
+	word-wrap: normal;
+	white-space: nowrap;
+	direction: ltr;
+}
+
+.fa-wizards-of-the-coast {
+	font-size: 100px;
 }
