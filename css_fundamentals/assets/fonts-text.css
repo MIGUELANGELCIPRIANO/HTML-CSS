@@ -12,7 +12,6 @@ body {
 *::after,
 *::before {
 	box-sizing: inherit;
-	font-family: 'Beleren Bold';
 }
 
 img {
@@ -33,4 +32,33 @@ font: font-style font-variant font-weight font-size / line-height font-family
 	font-variant: small-caps;
 	line-height: 1.5; */
 	font: italic small-caps bold 18px / 1.5 'Beleren Bold';
+}
+
+/* 
+WOFF: Web Open Font Format
+
+FONT-DISPLAY:
+	auto: Allows the browser to use the default method, which is usually block
+	block: briefly hides the text until the font has been fully downloaded
+	swap: Instructs the browser to use the alternate font to display the text until the custom font is fully loaded	(RECOMMENDED)
+	fallback: Is a mix of auto and swap
+	optional: Will hide the text, then load it with the alternative font, and finally apply the custom font
+*/
+
+@font-face {
+	font-family: 'Beleren Bold';
+	src: url('../typeface-beleren-bold-master/Beleren2016-Bold.woff')
+			format('woff'),
+		url('../typeface-beleren-bold-master/Beleren2016-Bold.ttf')
+			format('truetype'),
+		url('../typeface-beleren-bold-master/Beleren2016-Bold.svg#Beleren2016-Bold')
+			format('svg');
+	font-style: normal;
+	font-weight: bold;
+	text-rendering: optimizeLegibility;
+	/* font-display: swap (For non 'truetype' format cases) */
+}
+
+.beleren {
+	font-family: 'Beleren Bold', sans-serif;
 }
