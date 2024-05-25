@@ -1,0 +1,55 @@
+html {
+	box-sizing: border-box;
+}
+
+body {
+	color: aliceblue;
+	font-family: sans-serif;
+	background-color: #121418;
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: inherit;
+	font-family: 'Beleren Bold';
+}
+
+img {
+	width: 50%;
+}
+
+/*
+BORDER RADIUS
+Shorthand property:
+border-radius: 
+    border-top-left-radius
+    border-top-right-radius
+    border-bottom-right-radius
+    border-bottom-left-radius
+*/
+
+.box {
+	background-color: indianred;
+	margin: 2rem auto;
+	width: 200px;
+	height: 200px;
+	border: medium solid;
+}
+
+.border-radius-1 {
+	border-top-left-radius: 4rem;
+	border-top-right-radius: 4rem;
+	border-bottom-left-radius: 4rem;
+	border-bottom-right-radius: 4rem;
+	border-radius: 2rem 4rem 0;
+	border-radius: 4rem 2rem 1rem 0; /* Clockwise */
+}
+
+.border-radius-2 {
+	border-radius: 2rem 4rem/4rem 2rem; /* x radius / y radius */
+}
+
+.border-radius-3 {
+	border-radius: 50%;
+}
