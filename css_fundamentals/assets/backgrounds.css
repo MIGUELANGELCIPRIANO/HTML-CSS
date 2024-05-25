@@ -24,10 +24,10 @@ BACKGROUND
 
 background-color: Defines the background color of the element
 background-image: Defines the element's background image
-background-repeat: Defines how the background image is repeated in the element
 background-size: Defines the size of the background image, first value x, second value y
     cover: resizes the background image to ensure that it remains fully visible
     contain: Changes the size of the background image to ensure that the element is completely covered
+background-repeat: Defines how the background image is repeated in the element
 background-position: Defines the position of the background image, first x-value, second y-value. If no second value is specified, it will be center by default
 background-clip: Defines how much the background should extend inside the element
 background-origin: Defines the origin of the background image
@@ -39,8 +39,8 @@ background: background-image background-position background-size background-repe
 
 .box {
 	margin: 2rem auto;
-	width: 200px;
-	height: 200px;
+	width: auto;
+	height: 300px;
 	border: medium dashed;
 }
 
@@ -50,4 +50,11 @@ background: background-image background-position background-size background-repe
 
 .background-image {
 	background-image: url(../images/invasion_of_tarkir.jpg);
+}
+
+.background-size {
+	background-image: url(../images/invasion_of_tarkir.jpg);
+	background-size: 300px;
+    background-size: cover;
+    background-size: contain;
 }
