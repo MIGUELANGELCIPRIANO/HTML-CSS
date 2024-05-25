@@ -39,8 +39,8 @@ background: background-image background-position background-size background-repe
 
 .box {
 	margin: 2rem auto;
-	width: auto;
-	height: 300px;
+	width: 100%;
+	height: 50vh;
 	border: medium dashed;
 }
 
@@ -102,4 +102,13 @@ background: background-image background-position background-size background-repe
 	background-origin: content-box;
 	/* background-origin: border-box; */
 	padding: 1rem;
+}
+
+.background-attachment {
+	background-color: indianred;
+	background-image: url(../images/invasion_of_tarkir.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: scroll; /* Default value */
+	background-attachment: fixed;
 }
