@@ -1,0 +1,53 @@
+html {
+	box-sizing: border-box;
+}
+
+body {
+	color: aliceblue;
+	font-family: sans-serif;
+	background-color: #121418;
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: inherit;
+	font-family: 'Beleren Bold';
+}
+
+img {
+	width: 50%;
+}
+
+/*
+BACKGROUND
+
+background-color: Defines the background color of the element
+background-image: Defines the element's background image
+background-repeat: Defines how the background image is repeated in the element
+background-size: Defines the size of the background image, first value x, second value y
+    cover: resizes the background image to ensure that it remains fully visible
+    contain: Changes the size of the background image to ensure that the element is completely covered
+background-position: Defines the position of the background image, first x-value, second y-value. If no second value is specified, it will be center by default
+background-clip: Defines how much the background should extend inside the element
+background-origin: Defines the origin of the background image
+background-attachment: Defines how the background image will behave when scrolling the page
+
+Shorthand property: 
+background: background-image background-position background-size background-repeat background-origin background-clip background-attachment background-color
+*/
+
+.box {
+	margin: 2rem auto;
+	width: 200px;
+	height: 200px;
+	border: medium dashed;
+}
+
+.background-color {
+	background-color: crimson;
+}
+
+.background-image {
+	background-image: url(../images/invasion_of_tarkir.jpg);
+}
