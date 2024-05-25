@@ -81,3 +81,14 @@ background: background-image background-position background-size background-repe
 	background-position: bottom left;
 	background-position: center;
 }
+
+.background-clip {
+	background-color: indianred;
+	background-image: url(../images/invasion_of_tarkir.jpg);
+	background-size: 300px;
+	background-repeat: no-repeat;
+	background-clip: border-box; /* Default value */
+	background-clip: padding-box;
+	background-clip: content-box;
+	padding: 1rem;
+}
