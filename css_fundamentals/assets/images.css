@@ -1,0 +1,55 @@
+html {
+	box-sizing: border-box;
+}
+
+body {
+	color: aliceblue;
+	font-family: sans-serif;
+	background-color: #121418;
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: inherit;
+	font-family: 'Beleren Bold';
+}
+
+/* RESPONSIVE IMAGE */
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* SPECIFIC IMAGE SIZE */
+
+.card {
+	margin: 2rem auto;
+	border: 10px double brown;
+	border-radius: 5rem 5rem 1rem 1rem;
+	width: 500px;
+	height: 400px;
+}
+
+.card img {
+	background-color: brown;
+	border-radius: 5rem 5rem 0 0;
+	height: 300px;
+	object-fit: none;
+	object-fit: fill; /* Default Value */
+	object-fit: scale-down; /* Defines the lowest of the values contain and none */
+	object-fit: contain;
+	object-fit: cover;
+	object-position: left top;
+	object-position: right bottom;
+	object-position: center;
+}
+
+.card h3 {
+	border-top: 10px double brown;
+	margin: -3px;
+	padding: 20px;
+	font-size: 24px;
+	text-align: center;
+}
