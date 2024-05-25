@@ -1,0 +1,57 @@
+html {
+	box-sizing: border-box;
+}
+
+body {
+	color: aliceblue;
+	font-family: sans-serif;
+	background-color: #121418;
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: inherit;
+	font-family: 'Beleren Bold';
+}
+
+/*
+LIST STYLE
+Shorthand property:
+list-style: list-style-type list-style-image list-style-position
+*/
+
+.color-list li {
+	background-color: brown;
+	list-style-type: disc; /* Default Value */
+	list-style-type: armenian;
+	list-style-type: circle;
+	list-style-type: decimal;
+	list-style-type: decimal-leading-zero;
+	list-style-type: georgian;
+	list-style-type: lower-alpha;
+	list-style-type: lower-greek;
+	list-style-type: lower-latin;
+	list-style-type: lower-roman;
+	list-style-type: square;
+	list-style-type: upper-alpha;
+	list-style-type: upper-latin;
+	list-style-type: upper-roman;
+	list-style-position: outside;
+	list-style-position: inside;
+}
+
+.monored-list li {
+	list-style-type: none;
+}
+
+.monored-list li::before {
+	content: '';
+	display: inline-block;
+	width: 2rem;
+	height: 1rem;
+	background-image: url(../images/mana_red.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
