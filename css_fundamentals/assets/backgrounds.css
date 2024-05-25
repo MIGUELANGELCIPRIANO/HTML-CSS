@@ -55,6 +55,12 @@ background: background-image background-position background-size background-repe
 .background-size {
 	background-image: url(../images/invasion_of_tarkir.jpg);
 	background-size: 300px;
-    background-size: cover;
-    background-size: contain;
+	background-size: cover;
+	background-size: contain;
+}
+
+.background-repeat {
+	background-image: url(../images/invasion_of_tarkir.jpg);
+	background-size: 300px;
+	background-repeat: no-repeat;
 }
