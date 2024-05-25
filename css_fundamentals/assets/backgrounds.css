@@ -112,3 +112,13 @@ background: background-image background-position background-size background-repe
 	background-attachment: scroll; /* Default value */
 	background-attachment: fixed;
 }
+
+/* BACKGROUND MULTIPLE */
+
+.background-multiple {
+	background: url(../images/phyrexian_mite_token.png),
+		url(../images/phyrexia_white_land.png);
+	background-repeat: no-repeat;
+	background-size: contain, cover;
+	background-position: center;
+}
