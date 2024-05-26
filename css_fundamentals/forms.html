@@ -15,7 +15,38 @@
 		<h1>CSS Forms</h1>
 		<a href="index.html">Back to CSS fundamentals</a>
 		<hr />
-		<h2></h2>
+		<h2 id="contact-us">Contact Form</h2>
+		<form
+			class="contact-form"
+			action="https://formsubmit.co/ciprianomiguelangel.dev@gmail.com"
+			method="POST"
+			autocomplete="off"
+		>
+			<input
+				type="text"
+				name="name"
+				placeholder="Enter your name"
+				pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
+				title="Field accepts only letters and blanks"
+				required
+			/>
+			<input
+				type="email"
+				name="email"
+				placeholder="Enter your email"
+				pattern="^(\w+[/./-]?){1,}@[a-z]+[/.]\w{2,}$"
+				title="Invalid email"
+				required
+			/>
+			<textarea
+				name="comments"
+				placeholder="Enter your comment"
+				cols="30"
+				rows="10"
+				required
+			></textarea>
+			<input type="submit" />
+		</form>
 		<hr />
 		<footer>
 			<div>
