@@ -21,8 +21,8 @@ Shorthand property:
 list-style: list-style-type list-style-image list-style-position
 */
 
-.color-list li {
-	background-color: brown;
+.list li {
+	background-color: indianred;
 	list-style-type: disc; /* Default Value */
 	list-style-type: armenian;
 	list-style-type: circle;
@@ -54,4 +54,13 @@ list-style: list-style-type list-style-image list-style-position
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
+}
+
+/* COLUMNAR TEXT */
+
+.deck {
+	column-count: 3;
+	column-gap: 2rem;
+	column-rule: thin solid indianred;
+	column-width: 100px;
 }
