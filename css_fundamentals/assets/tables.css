@@ -1,0 +1,33 @@
+html {
+	box-sizing: border-box;
+}
+
+body {
+	color: aliceblue;
+	font-family: sans-serif;
+	background-color: #121418;
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: inherit;
+	font-family: 'Beleren Bold';
+}
+
+/* TABLE STYLES */
+
+.table {
+	font-size: 1.5rem;
+	border-collapse: collapse;
+	border-collapse: separate; /* Default Value */
+	empty-cells: show; /* Default Value */
+	empty-cells: hide; /* Applies if the "border-collapse" property has the value "separate" */
+}
+
+table,
+th,
+td {
+	border: thin solid;
+	border-spacing: 0.5rem; /* Applies if the "border-collapse" property has the value "separate" */
+}
