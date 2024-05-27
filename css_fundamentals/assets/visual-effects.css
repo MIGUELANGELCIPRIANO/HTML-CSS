@@ -1,10 +1,7 @@
 html {
 	box-sizing: border-box;
-}
-
-body {
-	color: aliceblue;
 	font-family: sans-serif;
+	color: aliceblue;
 	background-color: #121418;
 }
 
@@ -13,4 +10,22 @@ body {
 *::before {
 	box-sizing: inherit;
 	font-family: 'Beleren Bold';
+}
+
+/*
+BOX-SHADOW
+Shorthand property: 
+box-shadow: horizontal-offset vertical-offset color blur-shadow spread-shadow;
+*/
+
+.box {
+	margin: auto;
+	border: thin solid;
+	width: 300px;
+	height: 300px;
+}
+
+.box-shadow {
+	box-shadow: none; /* Default Value */
+	box-shadow: 1rem 1rem 1rem 1rem aliceblue inset;
 }
