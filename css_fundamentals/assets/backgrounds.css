@@ -112,7 +112,7 @@ background: background-image background-position background-size background-repe
 /* BACKGROUND MULTIPLE */
 
 .background-multiple {
-	background: url(../images/phyrexian_mite_token.png),
+	background: url(../images/skrelv_defector_mite.png),
 		url(../images/phyrexia_white_land.png);
 	background-repeat: no-repeat;
 	background-size: contain, cover;
