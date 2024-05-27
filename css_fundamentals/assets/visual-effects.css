@@ -19,7 +19,7 @@ box-shadow: horizontal-offset vertical-offset color blur-shadow spread-shadow;
 */
 
 .box {
-	margin: auto;
+	margin: 5rem auto;
 	border: thin solid;
 	width: 300px;
 	height: 300px;
@@ -28,4 +28,21 @@ box-shadow: horizontal-offset vertical-offset color blur-shadow spread-shadow;
 .box-shadow {
 	box-shadow: none; /* Default Value */
 	box-shadow: 1rem 1rem 1rem 1rem aliceblue inset;
+	box-shadow: 1rem 1rem 1rem 1rem aliceblue;
+}
+
+/*
+TEXT-SHADOW
+Shorthand property: 
+text-shadow: horizontal-offset vertical-offset color blur-shadow;
+*/
+
+.text {
+	text-align: center;
+	font-size: 32px;
+}
+
+.text-shadow {
+	text-shadow: none; /* Default Value */
+	text-shadow: 0.5rem 0.5rem 0.1rem brown;
 }
