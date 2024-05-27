@@ -15,7 +15,7 @@ html {
 /*
 BOX-SHADOW
 Shorthand property: 
-box-shadow: horizontal-offset vertical-offset color blur-shadow spread-shadow;
+box-shadow: horizontal-offset vertical-offset blur-shadow spread-shadow color;
 */
 
 .box {
@@ -34,7 +34,7 @@ box-shadow: horizontal-offset vertical-offset color blur-shadow spread-shadow;
 /*
 TEXT-SHADOW
 Shorthand property: 
-text-shadow: horizontal-offset vertical-offset color blur-shadow;
+text-shadow: horizontal-offset vertical-offset blur-shadow color;
 */
 
 .text {
@@ -45,4 +45,21 @@ text-shadow: horizontal-offset vertical-offset color blur-shadow;
 .text-shadow {
 	text-shadow: none; /* Default Value */
 	text-shadow: 0.5rem 0.5rem 0.1rem brown;
+}
+
+/*
+FILTER: DROP-SHADOW()
+Shorthand property: 
+filter: drop-shadow(horizontal-offset vertical-offset blur-shadow color);
+*/
+.drop-shadow {
+	margin: auto;
+	/* border: thin solid; */
+	width: 600px;
+	height: auto;
+}
+
+.drop-shadow img {
+    max-width: 100%;
+	filter: drop-shadow(0rem 0rem 0.5rem olive);
 }
