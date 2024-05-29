@@ -89,11 +89,75 @@ filter: drop-shadow(horizontal-offset vertical-offset blur-shadow color);
 	background-image: linear-gradient(to left, red, orange, yellow);
 	background-image: linear-gradient(to top left, red, orange, yellow);
 	background-image: linear-gradient(to top, red, orange, yellow);
-	background-image: linear-gradient(to top, red 30%, orange 60%, yellow);
-	background-image: linear-gradient(
+	background-image: linear-gradient(to top, red 30%, orange 60%, yellow 90%);
+	/* background-image: linear-gradient(
 		to top,
 		red 33%,
 		orange 34% 67%,
 		yellow 68%
+	); */
+}
+
+/* RADIAL GRADIENT */
+
+.radial-gradient {
+	background-image: radial-gradient(red, orange, yellow);
+	background-image: radial-gradient(circle 200px, brown, darkorange, yellow);
+	background-image: radial-gradient(
+		circle 200px,
+		brown 30%,
+		darkorange 60%,
+		yellow 90%
 	);
+	background-image: radial-gradient(
+		circle 200px at bottom,
+		red,
+		orange,
+		yellow
+	);
+	background-image: radial-gradient(
+		circle 200px at bottom left,
+		red,
+		orange,
+		yellow
+	);
+	background-image: radial-gradient(circle 200px at left, red, orange, yellow);
+	background-image: radial-gradient(
+		circle 200px at top left,
+		red,
+		orange,
+		yellow
+	);
+	background-image: radial-gradient(circle 200px at top, red, orange, yellow);
+	background-image: radial-gradient(
+		circle 200px at top right,
+		red,
+		orange,
+		yellow
+	);
+	background-image: radial-gradient(circle 200px at right, red, orange, yellow);
+	background-image: radial-gradient(
+		circle 200px at bottom right,
+		red,
+		orange,
+		yellow
+	);
+	background-image: radial-gradient(
+		circle 200px at bottom,
+		red,
+		orange,
+		yellow
+	);
+	background-image: radial-gradient(
+		ellipse 200px 150px,
+		red 30%,
+		orange 60%,
+		yellow 90%
+	);
+	/* background-image: radial-gradient(
+		ellipse 150px 200px,
+		red 33%,
+		orange 34% 67%,
+		yellow 68%
+	); */
 }
