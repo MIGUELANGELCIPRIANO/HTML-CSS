@@ -161,3 +161,20 @@ filter: drop-shadow(horizontal-offset vertical-offset blur-shadow color);
 		yellow 68%
 	); */
 }
+
+/* CONIC GRADIENT */
+
+.conic-gradient {
+	background-image: conic-gradient(red, orange, yellow); /* Clockwise */
+	background-image: conic-gradient(
+		red 90deg,
+		orange 135deg 225deg,
+		yellow 270deg
+	);
+	background-image: conic-gradient(
+		from 180deg,
+		red 90deg,
+		orange 135deg 225deg,
+		yellow 270deg
+	);
+}
