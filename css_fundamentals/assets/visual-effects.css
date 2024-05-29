@@ -60,6 +60,40 @@ filter: drop-shadow(horizontal-offset vertical-offset blur-shadow color);
 }
 
 .drop-shadow img {
-    max-width: 100%;
+	max-width: 100%;
 	filter: drop-shadow(0rem 0rem 0.5rem olive);
+}
+
+/* LINEAL GRADIENT */
+
+.linear-gradient {
+	background-image: linear-gradient(0deg, red, orange, yellow);
+	background-image: linear-gradient(45deg, red, orange, yellow);
+	background-image: linear-gradient(90deg, red, orange, yellow);
+	background-image: linear-gradient(135deg, red, orange, yellow);
+	background-image: linear-gradient(180deg, red, orange, yellow);
+	background-image: linear-gradient(225deg, red, orange, yellow);
+	background-image: linear-gradient(270deg, red, orange, yellow);
+	background-image: linear-gradient(
+		360deg,
+		red,
+		orange,
+		yellow
+	); /* Clockwise */
+	background-image: linear-gradient(to top, red, orange, yellow);
+	background-image: linear-gradient(to top right, red, orange, yellow);
+	background-image: linear-gradient(to right, red, orange, yellow);
+	background-image: linear-gradient(to bottom right, red, orange, yellow);
+	background-image: linear-gradient(to bottom, red, orange, yellow);
+	background-image: linear-gradient(to bottom left, red, orange, yellow);
+	background-image: linear-gradient(to left, red, orange, yellow);
+	background-image: linear-gradient(to top left, red, orange, yellow);
+	background-image: linear-gradient(to top, red, orange, yellow);
+	background-image: linear-gradient(to top, red 30%, orange 60%, yellow);
+	background-image: linear-gradient(
+		to top,
+		red 33%,
+		orange 34% 67%,
+		yellow 68%
+	);
 }
