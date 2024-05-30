@@ -12,6 +12,10 @@ html {
 	font-family: 'Beleren Bold';
 }
 
+a {
+	color: indianred;
+}
+
 /*
 BOX-SHADOW
 Shorthand property: 
@@ -342,4 +346,22 @@ filter: drop-shadow(horizontal-offset vertical-offset blur-shadow color);
 	background-blend-mode: saturation;
 	background-blend-mode: screen;
 	background-blend-mode: soft-light;
+}
+
+/* CLIP PATH */
+
+.clip-path {
+	clip-path: circle(200px at bottom);
+	clip-path: circle(200px at left bottom);
+	clip-path: circle(200px at left);
+	clip-path: circle(200px at top left);
+	clip-path: circle(200px at top);
+	clip-path: circle(200px at top right);
+	clip-path: circle(200px at right);
+	clip-path: circle(200px at right bottom);
+	clip-path: circle(200px);
+	clip-path: ellipse(300px 150px);
+	clip-path: inset(3rem 2rem 1rem 0.5rem);
+	clip-path: inset(1rem round 1rem 4rem 1rem);
+	clip-path: polygon(0 1%, 100% 1%, 50% 100%);
 }
