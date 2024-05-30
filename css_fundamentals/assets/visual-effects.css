@@ -242,6 +242,9 @@ filter: drop-shadow(horizontal-offset vertical-offset blur-shadow color);
 	height: 100%;
 	object-fit: cover;
 	object-position: 0 50%;
+}
+
+.single-filters {
 	filter: blur(0.15rem);
 	filter: brightness(0.25); /* Value range 0 to 1 */
 	filter: contrast(0.5); /* Value range 0 to 1 */
@@ -252,4 +255,8 @@ filter: drop-shadow(horizontal-offset vertical-offset blur-shadow color);
 	filter: opacity(0.2); /* Value range 0 to 1 (Default Value) */
 	filter: opacity(0.2); /* Value range 0 to 1 (Default Value) */
 	filter: saturate(0); /* Value range 0 to 1 (Default Value) */
+}
+
+.multiple-filters {
+	filter: hue-rotate(275deg) invert() saturate(0.5);
 }
