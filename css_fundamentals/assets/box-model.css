@@ -8,6 +8,10 @@ body {
 	font-family: 'Beleren Bold';
 }
 
+a {
+	color: indianred;
+}
+
 /*
 Box model: It is the archetype by which CSS structures its elements based on different properties:
 	1. Content: Content (text) of the HTML element

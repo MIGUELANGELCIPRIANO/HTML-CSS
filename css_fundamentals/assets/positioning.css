@@ -8,6 +8,10 @@ body {
 	font-family: 'Beleren Bold';
 }
 
+a {
+	color: indianred;
+}
+
 /*
 CSS Positioning
 The FLOAT and POSITION properties allow us to modify the natural position of any element in the HTML document

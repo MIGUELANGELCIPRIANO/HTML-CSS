@@ -15,6 +15,10 @@ body {
 	font-family: 'Beleren Bold';
 }
 
+a {
+	color: indianred;
+}
+
 /*
 BACKGROUND
 
@@ -41,7 +45,7 @@ background: background-image background-position background-size background-repe
 }
 
 .background-color {
-	background-color: crimson;
+	background-color: indianred;
 }
 
 .background-image {

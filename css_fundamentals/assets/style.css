@@ -13,6 +13,10 @@ body {
 	background-color: #121418;
 }
 
+a {
+	color: indianred;
+}
+
 /*
 Basic selectors 
 1) Tags or html elements
