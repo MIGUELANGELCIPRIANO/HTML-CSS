@@ -289,7 +289,7 @@ filter: drop-shadow(horizontal-offset vertical-offset blur-shadow color);
 	backdrop-filter: invert();
 }
 
-/* BLEND MODES */
+/* BLEND MODES IMAGES */
 
 .card .absolute {
 	position: absolute;
@@ -299,7 +299,7 @@ filter: drop-shadow(horizontal-offset vertical-offset blur-shadow color);
 	left: 20%;
 }
 
-.blend-modes {
+.blend-modes-images {
 	mix-blend-mode: normal; /* Default Value */
 	mix-blend-mode: color;
 	mix-blend-mode: color-burn;
@@ -316,4 +316,30 @@ filter: drop-shadow(horizontal-offset vertical-offset blur-shadow color);
 	mix-blend-mode: saturation;
 	mix-blend-mode: screen;
 	mix-blend-mode: soft-light;
+}
+
+/* BLEND MODES BACKGROUNDS */
+
+.blend-modes-backgrounds {
+	background-image: url(../images/mana_red.png),
+		url(../images/invasion_of_tarkir.jpg);
+	background-repeat: no-repeat;
+	background-size: contain, cover;
+	background-position: center;
+	background-blend-mode: normal; /* Default Value */
+	background-blend-mode: color;
+	background-blend-mode: color-burn;
+	background-blend-mode: color-dodge;
+	background-blend-mode: darken;
+	background-blend-mode: difference;
+	background-blend-mode: exclusion;
+	background-blend-mode: hard-light;
+	background-blend-mode: hue;
+	background-blend-mode: lighten;
+	background-blend-mode: luminosity;
+	background-blend-mode: multiply;
+	background-blend-mode: overlay;
+	background-blend-mode: saturation;
+	background-blend-mode: screen;
+	background-blend-mode: soft-light;
 }
