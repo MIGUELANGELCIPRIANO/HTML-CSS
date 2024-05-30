@@ -228,7 +228,7 @@ filter: drop-shadow(horizontal-offset vertical-offset blur-shadow color);
 	border-radius: 50%;
 }
 
-/* FILTERS */
+/* SINGLE FILTERS */
 
 .card {
 	margin: 2rem auto;
@@ -257,6 +257,34 @@ filter: drop-shadow(horizontal-offset vertical-offset blur-shadow color);
 	filter: saturate(0); /* Value range 0 to 1 (Default Value) */
 }
 
+/* MULTIPLE FILTERS */
+
 .multiple-filters {
 	filter: hue-rotate(275deg) invert() saturate(0.5);
+}
+
+/* BACKDROP FILTERS */
+
+.relative {
+	position: relative;
+}
+
+.backdrop-filters {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.backdrop-filters h4 {
+	color: white;
+	font-size: 3rem;
+	padding: 3rem 9.9rem;
+	border: thin solid;
+	background-color: rgba(178, 34, 34, 0.75);
+	backdrop-filter: invert();
 }
