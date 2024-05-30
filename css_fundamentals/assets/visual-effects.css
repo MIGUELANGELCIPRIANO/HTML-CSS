@@ -1,7 +1,7 @@
 html {
 	box-sizing: border-box;
 	font-family: sans-serif;
-	color: aliceblue;
+	color: white;
 	background-color: #121418;
 }
 
@@ -27,8 +27,8 @@ box-shadow: horizontal-offset vertical-offset blur-shadow spread-shadow color;
 
 .box-shadow {
 	box-shadow: none; /* Default Value */
-	box-shadow: 1rem 1rem 1rem 1rem aliceblue inset;
-	box-shadow: 1rem 1rem 1rem 1rem aliceblue;
+	box-shadow: 1rem 1rem 1rem 1rem brown inset;
+	box-shadow: 1rem 1rem 1rem 1rem brown;
 }
 
 /*
@@ -287,4 +287,33 @@ filter: drop-shadow(horizontal-offset vertical-offset blur-shadow color);
 	border: thin solid;
 	background-color: rgba(178, 34, 34, 0.75);
 	backdrop-filter: invert();
+}
+
+/* BLEND MODES */
+
+.card .absolute {
+	position: absolute;
+	width: auto;
+	height: 400px;
+	top: 0;
+	left: 20%;
+}
+
+.blend-modes {
+	mix-blend-mode: normal; /* Default Value */
+	mix-blend-mode: color;
+	mix-blend-mode: color-burn;
+	mix-blend-mode: color-dodge;
+	mix-blend-mode: darken;
+	mix-blend-mode: difference;
+	mix-blend-mode: exclusion;
+	mix-blend-mode: hard-light;
+	mix-blend-mode: hue;
+	mix-blend-mode: lighten;
+	mix-blend-mode: luminosity;
+	mix-blend-mode: multiply;
+	mix-blend-mode: overlay;
+	mix-blend-mode: saturation;
+	mix-blend-mode: screen;
+	mix-blend-mode: soft-light;
 }
