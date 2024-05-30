@@ -214,3 +214,16 @@ filter: drop-shadow(horizontal-offset vertical-offset blur-shadow color);
 		yellow 20% 25%
 	);
 }
+
+/* GRADIENT GRAPHICS */
+
+.chart-gradient {
+	background-image: conic-gradient(red 50%, orange 50% 80%, yellow 80%);
+	border-radius: 50%;
+}
+
+.donut-gradient {
+	background-image: radial-gradient(#121418 40%, white 41%, transparent 41%),
+		conic-gradient(red 50%, orange 50% 80%, yellow 80%);
+	border-radius: 50%;
+}
