@@ -365,3 +365,40 @@ filter: drop-shadow(horizontal-offset vertical-offset blur-shadow color);
 	clip-path: inset(1rem round 1rem 4rem 1rem);
 	clip-path: polygon(0 1%, 100% 1%, 50% 100%);
 }
+
+/* SHAPE OUTSIDE */
+
+.shapes {
+	border: thick double indianred;
+	padding: 1rem;
+	margin: 0 auto 1.5rem;
+	max-width: 800px;
+}
+
+.shapes img {
+	border: thick double indianred;
+	border-radius: 50%;
+	width: 200px;
+	height: 200px;
+	object-fit: cover;
+}
+
+.float-left {
+	float: left;
+}
+
+.float-right {
+	float: right;
+}
+
+.shape-1 {
+	margin: 1rem 1rem 1rem 0;
+	shape-outside: circle();
+	shape-outside: ellipse();
+}
+
+.shape-2 {
+	margin: 1rem 0 1rem 1rem;
+	shape-outside: circle();
+	shape-outside: ellipse();
+}
