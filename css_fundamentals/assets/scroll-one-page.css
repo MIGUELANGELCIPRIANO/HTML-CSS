@@ -1,0 +1,62 @@
+/* SCROLL MARGIN & SCROLL BEHAVIOR */
+
+html {
+	box-sizing: border-box;
+	font-family: sans-serif;
+	color: white;
+	background-color: #121418;
+	scroll-behavior: none; /* Default Value */
+	scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: inherit;
+	font-family: 'Beleren Bold';
+}
+
+a {
+	color: indianred;
+}
+
+body,
+h1,
+h2 {
+	margin: 0;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	border: thick double indianred;
+	border-radius: 0.5rem;
+}
+
+[id] {
+	scroll-margin-top: 7.8ex; /* Definitive solution to the “sticky” behavior of the header with respect to the sections */
+}
+
+.header {
+	position: sticky;
+	top: 0;
+	padding: 0.25rem;
+	text-align: center;
+	background-color: black;
+	color: white;
+}
+
+.header a {
+	margin: 0 1rem;
+}
+
+.header a:hover {
+	color: darkorange;
+}
+
+.slide {
+	width: 100%;
+	min-height: 100vh;
+	/* padding-top: 4rem; */ /* Alternative solution to the “sticky” behavior of the header with respect to the sections */
+	padding: 2rem;
+}
