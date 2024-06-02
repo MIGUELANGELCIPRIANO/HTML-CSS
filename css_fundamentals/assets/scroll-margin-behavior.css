@@ -1,4 +1,4 @@
-/* SCROLL MARGIN & SCROLL BEHAVIOR */
+/* SCROLL MARGIN & BEHAVIOR */
 
 html {
 	box-sizing: border-box;
@@ -24,6 +24,10 @@ body,
 h1,
 h2 {
 	margin: 0;
+}
+
+footer {
+	padding: 1rem 2rem;
 }
 
 img {
@@ -59,4 +63,5 @@ img {
 	min-height: 100vh;
 	/* padding-top: 4rem; */ /* Alternative solution to the “sticky” behavior of the header with respect to the sections */
 	padding: 2rem;
+	text-align: justify;
 }
