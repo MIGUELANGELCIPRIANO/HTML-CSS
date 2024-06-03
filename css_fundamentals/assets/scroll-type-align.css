@@ -30,7 +30,7 @@ footer {
 
 .slides {
 	width: 100%;
-	height: 100vh;
+	height: 80vh;
 	overflow-y: scroll;
 	/* scroll-snap-type: [ x AND y OR inline AND block] [ mandatory OR proximity ]; */
 	scroll-snap-type: none; /* Default Value */
@@ -56,4 +56,31 @@ footer {
 	align-items: center;
 	font-size: 2.5vw;
 	text-align: justify;
+}
+
+.carousel {
+	border: thick double indianred;
+	display: flex;
+	width: 95vw;
+	height: 90%;
+	overflow-x: hidden;
+}
+
+.carousel-container {
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(5, 100%);
+	overflow-x: scroll;
+	overflow-y: hidden;
+	scroll-snap-type: x mandatory;
+}
+
+.carousel-slide {
+	scroll-snap-align: center;
+}
+
+.carousel-slide-content img {
+	width: 100%;
+	height: auto;
+	object-fit: cover;
 }
