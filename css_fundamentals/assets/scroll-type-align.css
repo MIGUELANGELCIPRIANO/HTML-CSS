@@ -84,3 +84,17 @@ footer {
 	height: auto;
 	object-fit: cover;
 }
+
+/* GRADIENT TEXT */
+
+h2 {
+	background-image: linear-gradient(firebrick, indianred, darkorange);
+	-ms-background-clip: text;
+	-moz-background-clip: text;
+	-webkit-background-clip: text;
+	background-clip: text;
+	-ms-text-fill-color: transparent;
+	-moz-text-fill-color: transparent;
+	-webkit-text-fill-color: transparent;
+	text-fill-color: transparent;
+}
