@@ -18,7 +18,7 @@ a {
 
 .box {
 	margin: 5rem auto;
-	border: thin solid;
+	border: thick double #121418;
 	width: 300px;
 	height: 300px;
 }
@@ -35,4 +35,40 @@ a {
 	height: 100%;
 	object-fit: cover;
 	object-position: 0 50%;
+}
+
+/*
+TRANSITIONS 
+transition-property: Defines the CSS properties on which the transition effect should be applied
+transition-duration: Sets the time it should take for a transition animation to complete. By default, the value is 0s
+transition-timing-function: Sets how intermediate values are calculated for CSS properties that are affected by a transition effect
+    - linear: Transitions at a uniform speed
+    - ease: Increase speed towards the middle of the transition and slow down again at the end
+    - ease-in: Starts slowly, increasing the speed of transition to completion
+    - ease-out: Starts transition quickly, slowing as transition continues
+    - ease-in-out: Starts transition slowly, accelerates and then slows down again
+    - steps( n, <jumpterm>): Displays the transition over "n" stops along the transition, showing each stop for equal periods of time
+        - jump-start: Denotes a continuous function on the left, so that the first jump occurs when the transition begins
+        - jump-end: Denotes a continuous function to the right, so that the last jump occurs at the end of the animation
+        - jump-none: No jump at either end
+        - jump-both: Includes pauses at the 0% and 100% marks, effectively adding a step during transition time
+transition-delay: Specifies the time to wait between the change of a property and the beginning of a transition effect
+
+Shorthand property: 
+transition: property duration timing-function delay
+*/
+
+.transitions .box {
+	background-color: indianred;
+	transition-property: background-color;
+	transition-duration: 500ms;
+	transition-timing-function: ease;
+	transition-delay: 0.5s;
+	transition: border-color 1s linear 1s;
+	transition: all 1s ease-in-out 250ms;
+}
+
+.transitions .box:hover {
+	background-color: firebrick;
+	border-color: darkorange;
 }
