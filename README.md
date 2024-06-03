@@ -1,6 +1,6 @@
 # HTML-CSS-COURSE
 
-<img width="50%" src="" />
+<img width="50%" src="./css_fundamentals/images/html_css_course.png" />
 
 ## INTRODUCTION
 
@@ -15,4 +15,3 @@ HTML and CSS fundamentals course.
 All fonts are copyright of [Wizards of the Coast](http://magicthegathering.com).
 
 CSS released under the [MIT license](https://github.com/Saeris/typeface-beleren-bold/blob/master/LICENSE.md).
- 
