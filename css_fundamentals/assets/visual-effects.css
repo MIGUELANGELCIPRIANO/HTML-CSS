@@ -257,7 +257,6 @@ filter: drop-shadow(horizontal-offset vertical-offset blur-shadow color);
 	filter: hue-rotate(225deg); /* Value range 0 to 360deg */
 	filter: invert(); /* Value range 0 to 1 (Default Value) */
 	filter: opacity(0.2); /* Value range 0 to 1 (Default Value) */
-	filter: opacity(0.2); /* Value range 0 to 1 (Default Value) */
 	filter: saturate(0); /* Value range 0 to 1 (Default Value) */
 }
 
