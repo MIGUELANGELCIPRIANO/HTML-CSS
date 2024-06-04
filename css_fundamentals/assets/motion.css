@@ -58,7 +58,7 @@ Shorthand property:
 transition: property duration timing-function delay
 */
 
-.transitions .box {
+.transition .box {
 	background-color: indianred;
 	transition-property: background-color;
 	transition-duration: 500ms;
@@ -68,26 +68,52 @@ transition: property duration timing-function delay
 	transition: all 1s ease-in-out 250ms;
 }
 
-.transitions .box:hover {
+.transition .box:hover {
 	background-color: firebrick;
 	border-color: darkorange;
 }
 
-.transitions .card {
+.transition .card {
 	transition: opacity 1s ease-out, border-color 1s steps(3),
 		box-shadow 1.5s linear 2s;
 }
 
-.transitions .card:hover {
+.transition .card:hover {
 	opacity: 0.75;
 	border-color: firebrick;
 	box-shadow: 0rem 0rem 1rem 1rem firebrick;
 }
 
-.transitions .card img {
+.transition .card img {
 	transition: object-position 2s ease-in-out 3s;
 }
 
-.transitions .card img:hover {
+.transition .card img:hover {
 	object-position: 100% 50%;
+}
+
+/* 
+TRANSFORMATIONS
+*/
+
+.transform-2d img {
+	transition: transform 2s ease-in-out;
+}
+
+.transform-2d img:hover {
+	transform: none; /* Default Value */
+	transform: translateX(4rem);
+	transform: translateY(4rem);
+	transform: translate(4rem, 4rem);
+	transform: translate(-10%, -10%);
+	transform: scaleX(1.25);
+	transform: scaleY(1.25);
+	transform: scale(-1, -1);
+	transform: rotateX(90deg);
+	transform: rotateY(90deg);
+	transform: rotateZ(360deg); /* Clockwise */
+	transform: rotate(360deg); /* Clockwise */
+	transform: skewX(20deg);
+	transform: skewY(20deg);
+	transform: skew(20deg, 20deg);
 }
