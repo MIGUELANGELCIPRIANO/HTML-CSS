@@ -92,9 +92,7 @@ transition: property duration timing-function delay
 	object-position: 100% 50%;
 }
 
-/* 
-TRANSFORMATIONS
-*/
+/* TRANSFORMATIONS 2D */
 
 .transform-2d img {
 	transition: transform 2s ease-in-out;
@@ -123,4 +121,22 @@ TRANSFORMATIONS
 	transform: matrix(1, 2, 2, 1, 20, 10);
 	transform: translate(25%, -25%) rotate(225deg) skew(10deg, 10deg)
 		scale(-0.5, -0.5);
+}
+
+/*
+TRANSFORMATIONS 3D
+It is necessary to assign a value to the "perspective" property either directly on the element or on the parent element for the 3D effects on the Z axis to work
+*/
+
+.transform-3d {
+	perspective: 10rem;
+}
+
+.transform-3d img {
+	transition: transform 2s ease-in-out;
+}
+
+.transform-3d img:hover {
+	/* transform: perspective(10rem) translateZ(-4rem); */
+	transform: translateZ(-4rem);
 }
