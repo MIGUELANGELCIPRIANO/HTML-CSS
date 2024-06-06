@@ -139,4 +139,8 @@ It is necessary to assign a value to the "perspective" property either directly 
 .transform-3d img:hover {
 	/* transform: perspective(10rem) translateZ(-4rem); */
 	transform: translateZ(-4rem);
+	transform: translate3d(2rem, 50%, -2rem);
+	transform: rotateX(20deg);
+	transform: rotateY(-20deg);
+	transform: rotate3d(1, 1, 1, 20deg);
 }
