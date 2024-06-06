@@ -147,4 +147,8 @@ It is necessary to assign a value to the "perspective" property either directly 
 	https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/matrix3d 
 	transform: matrix3d(1, 0, 0, 0, 0, 1, 6, 0, 0, 0, 1, 0, 50, 100, 0, 1.1);
 	*/
+	transform: rotate3d(-1, 2.5, -2, 20deg);
+	transform: rotate3d(-1, 2.5, -2, 20deg) translate3d(2rem, 20%, -3rem);
+	transform: rotate3d(-1, 2.5, -2, 20deg) translate3d(2rem, 20%, -3rem)
+		scale3d(1.5, 1.5, 1.5);
 }
