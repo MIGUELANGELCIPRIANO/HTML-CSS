@@ -209,3 +209,23 @@ It is necessary to assign a value to the "perspective" property either directly 
 .flip-back {
 	transform: rotateY(180deg);
 }
+
+/* 
+ANIMATION
+Shorthand property: 
+animation: name duration timing-function delay iteration-count direction fill-mode;
+*/
+
+@keyframes myAnimation {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+.my-animation {
+	animation: myAnimation;
+	animation-duration: 3s;
+}
