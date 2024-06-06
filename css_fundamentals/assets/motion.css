@@ -152,3 +152,19 @@ It is necessary to assign a value to the "perspective" property either directly 
 	transform: rotate3d(-1, 2.5, -2, 20deg) translate3d(2rem, 20%, -3rem)
 		scale3d(1.5, 1.5, 1.5);
 }
+
+/* TRANSFORMATION ORIGIN */
+
+.transform-origin img {
+	transition: transform 2s ease-in-out;
+	/* transform-origin: x y z; */
+	transform-origin: 50% 50% 0;
+	transform-origin: 0 0;
+	transform-origin: top right;
+	transform-origin: 2rem 2rem;
+	transform-origin: 2rem 50%;
+}
+
+.transform-origin img:hover {
+	transform: rotate(360deg);
+}
