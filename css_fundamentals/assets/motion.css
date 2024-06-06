@@ -168,3 +168,44 @@ It is necessary to assign a value to the "perspective" property either directly 
 .transform-origin img:hover {
 	transform: rotate(360deg);
 }
+
+/* FLIP CARD */
+
+.flip-card {
+	margin: 2rem auto;
+	border: thin solid #bda350;
+	border-radius: 12px;
+	width: 250px;
+	height: 350px;
+	position: relative;
+	cursor: pointer;
+	transition: transform 1s ease-in-out;
+	perspective: 10rem;
+	transform-style: preserve-3d;
+}
+
+.flip-card:hover {
+	transform: rotateY(180deg);
+}
+
+.flip-card img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: 0 50%;
+}
+
+.flip-face {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+}
+
+.flip-front {
+	transform: rotateY(0deg);
+}
+
+.flip-back {
+	transform: rotateY(180deg);
+}
