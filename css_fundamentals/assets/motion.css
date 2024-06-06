@@ -227,5 +227,20 @@ animation: name duration timing-function delay iteration-count direction fill-mo
 
 .my-animation {
 	animation: myAnimation;
-	animation-duration: 3s;
+	animation-duration: 2s;
+	/* https://cubic-bezier.com/ */
+	animation-timing-function: cubic-bezier(1, 0, 0, 1);
+	animation-timing-function: ease-in-out;
+	animation-delay: 250ms;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	/* At the end of the animation you are left with the final styles of the animation */
+	animation-fill-mode: forwards;
+	/* At the beginning of the animation, the initial styles of the animation remain */
+	animation-fill-mode: backwards;
+	/* both apply forwards and backwards values at the same time */
+	animation-fill-mode: both;
+	animation-play-state: paused; /* CSS deprecated function. Animation control via JavaScript */
+	animation-play-state: running; /* Deafult Value */
+	animation: myAnimation 2s ease 250ms infinite alternate both;
 }
