@@ -244,3 +244,27 @@ animation: name duration timing-function delay iteration-count direction fill-mo
 	animation-play-state: running; /* Deafult Value */
 	animation: myAnimation 2s ease 250ms infinite alternate both;
 }
+
+/* TIMELINE & FRAMES */
+
+@keyframes myFrame {
+	0% {
+		opacity: 0;
+		transform: translateX(0%);
+	}
+	50% {
+		opacity: 0.5;
+		transform: translateX(-50%);
+	}
+	75% {
+		transform: translateX(-75%);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(100%);
+	}
+}
+
+.my-frame {
+	animation: myFrame 2s infinite;
+}
