@@ -211,12 +211,12 @@ It is necessary to assign a value to the "perspective" property either directly 
 }
 
 /* 
-ANIMATION
+SINGLE ANIMATION
 Shorthand property: 
 animation: name duration timing-function delay iteration-count direction fill-mode;
 */
 
-@keyframes myAnimation {
+@keyframes animation {
 	from {
 		opacity: 0;
 	}
@@ -225,8 +225,8 @@ animation: name duration timing-function delay iteration-count direction fill-mo
 	}
 }
 
-.my-animation {
-	animation: myAnimation;
+.animation {
+	animation: animation;
 	animation-duration: 2s;
 	/* https://cubic-bezier.com/ */
 	animation-timing-function: cubic-bezier(1, 0, 0, 1);
@@ -242,12 +242,12 @@ animation: name duration timing-function delay iteration-count direction fill-mo
 	animation-fill-mode: both;
 	animation-play-state: paused; /* CSS deprecated function. Animation control via JavaScript */
 	animation-play-state: running; /* Deafult Value */
-	animation: myAnimation 2s ease 250ms infinite alternate both;
+	animation: animation 2s ease 250ms infinite alternate both;
 }
 
-/* TIMELINE & FRAMES */
+/* TIMELINE & FRAME ANIMATION */
 
-@keyframes myFrame {
+@keyframes frame {
 	0% {
 		opacity: 0;
 		transform: translateX(0%);
@@ -265,6 +265,36 @@ animation: name duration timing-function delay iteration-count direction fill-mo
 	}
 }
 
-.my-frame {
-	animation: myFrame 2s infinite;
+.frame {
+	animation: frame 2s infinite;
+}
+
+/* MULTIPLE ANIMATIONS */
+
+@keyframes multipleAnimation1 {
+	0% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes multipleAnimation2 {
+	0% {
+		transform: translateY(0%);
+	}
+	50% {
+		transform: translateY(-100%);
+	}
+	100% {
+		transform: translateY(0%);
+	}
+}
+
+.multiple-animation {
+	animation: multipleAnimation1 2s infinite, multipleAnimation2 2s infinite;
 }
