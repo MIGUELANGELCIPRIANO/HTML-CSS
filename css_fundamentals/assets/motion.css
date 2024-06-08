@@ -319,6 +319,10 @@ animation: name duration timing-function delay iteration-count direction fill-mo
 	}
 }
 
+.fade {
+	text-align: center;
+}
+
 .fade img {
 	border: thin solid indianred;
 	border-radius: 50%;
@@ -355,6 +359,10 @@ animation: name duration timing-function delay iteration-count direction fill-mo
 	}
 }
 
+.shake {
+	text-align: center;
+}
+
 .shake img {
 	width: 200px;
 	cursor: pointer;
@@ -377,6 +385,10 @@ animation: name duration timing-function delay iteration-count direction fill-mo
 	100% {
 		transform: scale(1);
 	}
+}
+
+.pulse {
+	text-align: center;
 }
 
 .pulse img {
@@ -408,6 +420,10 @@ animation: name duration timing-function delay iteration-count direction fill-mo
 }
 
 /* ANIMATED BUTTONS */
+
+.button-container {
+	text-align: center;
+}
 
 .button {
 	color: white;
