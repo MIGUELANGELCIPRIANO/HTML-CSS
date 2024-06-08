@@ -381,5 +381,26 @@ animation: name duration timing-function delay iteration-count direction fill-mo
 
 .pulse img {
 	width: 200px;
-	animation: pulse 1s linear infinite; 
+	animation: pulse 1s linear infinite;
+}
+
+/* SPINNER / LOADER */
+
+@keyframes spinner {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.spinner {
+	width: 5vw;
+	height: 5vw;
+	border-radius: 50%;
+	border: 0.5vw solid rgba(255, 253, 253, 0.1);
+	border-left-color: red;
+	filter: drop-shadow(0rem 0rem 0.2rem red);
+	animation: spinner 1s ease-out infinite;
 }
