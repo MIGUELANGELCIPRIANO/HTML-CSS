@@ -408,6 +408,8 @@ animation: name duration timing-function delay iteration-count direction fill-mo
 /* ANIMATED BUTTONS */
 
 .button {
+	color: white;
+	background-color: rgb(165, 42, 42);
 	position: relative;
 	border: none;
 	border-radius: 0.25rem;
@@ -417,14 +419,39 @@ animation: name duration timing-function delay iteration-count direction fill-mo
 	font-size: 1.25rem;
 	cursor: pointer;
 	overflow: hidden;
-	box-shadow: 0rem 0rem 0.5rem 0.25rem rgba(255, 255, 255, 0.2);
+	box-shadow: 0rem 0rem 0.5rem 0.25rem rgb(255, 0, 0, 0.5);
 }
 
-.animated-button::after{
-	content: "";
+.animated-button::after {
+	content: '';
 	position: absolute;
 	bottom: 0;
 	width: 0;
-	height: .25rem;
-	background-color: firebrick;
+	height: 0.25rem;
+	background-color: red;
+	transition: width 0.5s ease, left 0.5s ease, right 0.5s ease;
+}
+
+.animated-button:hover::after {
+	width: 100%;
+}
+
+.to-left::after {
+	left: 0;
+}
+
+.to-center::after {
+	left: 50%;
+}
+
+.to-center:hover::after {
+	left: 0;
+}
+
+.to-left::after {
+	left: 0;
+}
+
+.to-right::after {
+	right: 0;
 }
