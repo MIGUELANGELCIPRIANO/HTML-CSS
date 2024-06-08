@@ -404,3 +404,27 @@ animation: name duration timing-function delay iteration-count direction fill-mo
 	filter: drop-shadow(0rem 0rem 0.2rem red);
 	animation: spinner 1s ease-out infinite;
 }
+
+/* ANIMATED BUTTONS */
+
+.button {
+	position: relative;
+	border: none;
+	border-radius: 0.25rem;
+	padding: 0.2rem;
+	width: 13rem;
+	height: 2.5rem;
+	font-size: 1.25rem;
+	cursor: pointer;
+	overflow: hidden;
+	box-shadow: 0rem 0rem 0.5rem 0.25rem rgba(255, 255, 255, 0.2);
+}
+
+.animated-button::after{
+	content: "";
+	position: absolute;
+	bottom: 0;
+	width: 0;
+	height: .25rem;
+	background-color: firebrick;
+}
