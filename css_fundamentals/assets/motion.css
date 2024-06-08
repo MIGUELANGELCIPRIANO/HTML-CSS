@@ -364,3 +364,22 @@ animation: name duration timing-function delay iteration-count direction fill-mo
 	animation: shake 1s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
 	transform: translate(0, 0);
 }
+
+/* PULSE */
+
+@keyframes pulse {
+	0% {
+		transform: scale(1.1);
+	}
+	50% {
+		transform: scale(0.8);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+.pulse img {
+	width: 200px;
+	animation: pulse 1s linear infinite; 
+}
