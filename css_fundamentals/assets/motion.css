@@ -398,6 +398,8 @@ animation: name duration timing-function delay iteration-count direction fill-mo
 .spinner {
 	width: 5vw;
 	height: 5vw;
+	margin-left: auto;
+	margin-right: auto;
 	border-radius: 50%;
 	border: 0.5vw solid rgba(255, 253, 253, 0.1);
 	border-left-color: red;
@@ -472,4 +474,75 @@ animation: name duration timing-function delay iteration-count direction fill-mo
 .animated-button-gradient:hover {
 	background-position: 100% 0;
 	box-shadow: 0rem 0rem 0.5rem 0.25rem rgba(255, 69, 0, 0.75);
+}
+
+/* TAB MENU */
+
+.tabs-menu {
+	color: white;
+	font-size: 1.1rem;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 1rem;
+	border-radius: 0.25rem;
+	width: 95%;
+	height: 3rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #333333;
+}
+
+.tabs-menu input[type='radio'] {
+	display: none;
+}
+
+.tabs-menu label {
+	position: relative;
+	z-index: 1;
+	width: calc(100% / 4 - 0.5rem);
+	text-align: center;
+	cursor: pointer;
+}
+
+.tabs-menu label:hover {
+	color: white;
+	text-shadow: 0rem 0rem 0.25rem white;
+}
+
+.tabs-menu input[type='radio']:checked + label {
+	color: white;
+	text-shadow: 0rem 0rem 0.25rem white;
+}
+
+.tab-background-hover {
+	position: absolute;
+	width: calc(100% / 4 - 0.5rem);
+	height: 2rem;
+	background-image: linear-gradient(
+		to right,
+		brown,
+		firebrick,
+		orangered,
+		darkorange
+	);
+	border-radius: 0.25rem;
+	transition: transform 300ms ease-in-out;
+}
+
+#tab-1:checked ~ .tab-background-hover {
+	transform: translateX(0);
+}
+
+#tab-2:checked ~ .tab-background-hover {
+	transform: translateX(100%);
+}
+
+#tab-3:checked ~ .tab-background-hover {
+	transform: translateX(200%);
+}
+
+#tab-4:checked ~ .tab-background-hover {
+	transform: translateX(300%);
 }
