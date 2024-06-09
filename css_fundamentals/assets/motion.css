@@ -699,8 +699,8 @@ animation: name duration timing-function delay iteration-count direction fill-mo
 	border: thick double firebrick;
 	border-radius: 0.25rem;
 	padding: 2rem;
-	width: 80%;
-	height: 80vh;
+	width: 75%;
+	height: auto;
 	display: flex;
 	flex-direction: column;
 	text-align: left;
@@ -709,7 +709,7 @@ animation: name duration timing-function delay iteration-count direction fill-mo
 }
 
 .modal-container img {
-	width: 60%;
+	width: 50%;
 	height: auto;
 	border: thick double firebrick;
 	border-radius: 0.25rem;
@@ -728,4 +728,46 @@ animation: name duration timing-function delay iteration-count direction fill-mo
 	line-height: 3rem;
 	color: firebrick;
 	transition: background-color 300ms linear, transform 300ms ease-in-out;
+}
+
+/* INTRO */
+
+@keyframes intro {
+	0% {
+		transform: perspective(100vh) rotateX(15deg) translateY(100%);
+	}
+	100% {
+		transform: perspective(100vh) rotateX(25deg) translateY(-200%);
+	}
+}
+
+.story {
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+	height: 100vh;
+	overflow: hidden;
+	background-image: url('../images/phyrexian-tower.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.story-container {
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+	text-align: justify;
+	letter-spacing: 0.1rem;
+	animation: intro 20s linear infinite;
+}
+
+.story-container h3 {
+	font-size: 2.5rem;
+	text-align: center;
+}
+
+.story-container p {
+	font-size: 1.5rem;
+	line-height: 2rem;
 }
